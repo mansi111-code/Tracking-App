@@ -1,0 +1,1764 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0;
+}
+html {
+  font-size: 62.3%;
+}
+.aiWhatsapp p {
+  color: #45437f;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 0px;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.aiWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.premium {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+.premiumTrail {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 100px;
+  height: 65px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+.leftSideOfHeader {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.premiumTrail p {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.peterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.peterAccount span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+.peterAccount p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+.peterImg {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+.andyPeter {
+  display: flex;
+  gap: 1rem;
+}
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBar {
+  border: 1px solid #b9b9b9;
+  border-radius: 20px;
+  padding: 12px, 24px, 12px, 24px;
+  width: 425px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 19px;
+  margin-top: 55px;
+  gap: 16px;
+  margin-left: 226px;
+}
+.searchClientInput {
+  border: none;
+  height: 50px;
+  width: 100%;
+}
+.searchClientInput::placeholder,
+.searchClientInput {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(82, 78, 78, 1);
+}
+.searchClientInput:focus {
+  outline: none;
+  border: none;
+}
+.sleep {
+  width: 290px;
+  height: 270px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.weight {
+  width: 290px;
+  height: 270px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.attendence {
+  width: 290px;
+  height: 270px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.water {
+  width: 290px;
+  height: 270px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.water p {
+  padding-right: 212px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-top: 14px;
+}
+.attendence p {
+  padding-right: 170px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-top: 14px;
+}
+.sleep p {
+  padding-right: 220px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-top: 14px;
+}
+.weight p {
+  padding-right: 200px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-top: 14px;
+}
+.informationForHealth {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* padding-left: 81px;
+  padding-right: 81px; */
+  padding-top: 83px;
+}
+.informationForFood {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* padding-left: 81px;
+  padding-right: 81px; */
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.informationForHealth img,
+.informationForFood img {
+  height: 204px;
+  width: 250px;
+}
+.morningBreakfast,
+.lunch,
+.eveBreakfast,
+.dinner {
+  width: 287px;
+  height: 270px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.morningBreakfast p,
+.lunch p,
+.eveBreakfast p,
+.dinner p {
+  display: flex;
+  padding-right: 226px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-top: 14px;
+}
+/Sleep Page Style/
+.sleepTrackerMainContainerInfo {
+  padding-left: 62px;
+}
+.aiWhatsapp p {
+  color: #45437f;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.aiWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.premium {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.premiumTrail {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 100px;
+  height: 65px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftSideOfHeader {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.premiumTrail p {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.peterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.peterAccount span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.peterAccount p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.peterImg {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.andyPeter {
+  display: flex;
+  gap: 1rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sleepInfoMainContainer {
+  margin-top: 39px;
+  font-family: "Poppins", sans-serif;
+}
+.sleepTrackerBackgroundContainer {
+  height: 361px;
+  width: 723px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #909090;
+  border-radius: 7px;
+  align-items: center;
+  margin-top: 42px;
+}
+.sleepTrackerBackgroundContainer p {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 0px;
+  margin-right: 573px;
+  margin-top: 12px;
+}
+.selectorBorder {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+}
+.sleepTracker img {
+  width: 700px;
+  height: 300px;
+}
+.selector {
+  width: 108px;
+  background-color: white;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.selector span {
+  display: flex;
+}
+.singleDayInfo span {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.singleDayInfo p {
+  color: #3e4043;
+  font-size: 12px;
+  font-weight: 400;
+}
+.averageSleepTime {
+  display: flex;
+  gap: 198px;
+}
+.averageSleepTime {
+  font-weight: 500;
+  font-size: 12px;
+}
+.sleepToWakeupInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 33px;
+  width: 43%;
+}
+.lastSleepInfo {
+  margin-top: 18px;
+}
+.lastSleepInfo p {
+  font-weight: 500;
+  font-size: 12px;
+}
+.dayAndMonthWithDateContainer {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 79px;
+}
+.nav-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.nav-link p {
+  margin-bottom: 0px;
+}
+.sleepingTimeWithHoursAndMinutes p,
+.wakeUpTimeInMinutes p,
+.wentToBadWithHoursAndMinutes p,
+.fallAsleepWithHoursAndMinutes p {
+  margin-bottom: 0px;
+  color: #3e4043;
+  font-weight: 500;
+  font-size: 13px;
+}
+.sleepingTimeWithHoursAndMinutes span,
+.wakeUpTimeInMinutes span,
+.wentToBadWithHoursAndMinutes span,
+.fallAsleepWithHoursAndMinutes span {
+  color: #8d8d8d;
+  font-weight: 400;
+  font-size: 9px;
+}
+.sleepTime,
+.wakeupTime,
+.wentToBad,
+.fallasleep {
+  display: flex;
+  /* gap: 14px; */
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.moreDetailsMainContainer {
+  width: 204px;
+  margin-top: 40px;
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.moreDetailsinnerContainer {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: #2f2e2e;
+  font-weight: 500;
+  font-size: 13px;
+}
+.moreDetailsinnerContainer p {
+  margin-bottom: 0px;
+}
+/* .my-chart {
+  width: 55px !important;
+  height: 55px !important;
+} */
+.Pie-Chart-data-Container {
+  margin-bottom: 5px;
+}
+.Pie-Chart-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chart-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.Pie-Chart-data-Container {
+  margin-left: -20px;
+}
+.Pie-Chart-Data-Container{
+  gap: 2rem;
+}
+.weekWholeData {
+  margin-bottom: 4px;
+}
+.daysWeekMonthContainer {
+  display: flex;
+  gap: 13px;
+}
+.monthlyOverview {
+  height: 361px;
+  width: 723px;
+  border: 1px solid #909090;
+  border-radius: 7px;
+  margin-top: 54px;
+  margin-bottom: 59px;
+}
+#monthlyOverviewPara {
+  color: #091b35;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+}
+.monthlyOverviewDaysWeek {
+  padding: 31px;
+  display: flex;
+  gap: 33rem;
+}
+/Water Page/
+.waterTrackerMainContainerInfo {
+  padding-left: 62px;
+}
+.aiWhatsapp p {
+  color: #45437f;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.aiWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.premium {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.premiumTrail {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 100px;
+  height: 65px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftSideOfHeader {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.premiumTrail p {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.peterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.peterAccount span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.peterAccount p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.peterImg {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.andyPeter {
+  display: flex;
+  gap: 1rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.waterInfoMainContainer {
+  margin-top: 39px;
+  font-family: "Poppins", sans-serif;
+}
+
+.waterTrackerBackgroundContainer {
+  height: 361px;
+  width: 723px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #909090;
+  border-radius: 7px;
+  align-items: center;
+  margin-top: 42px;
+}
+.waterTrackerBackgroundContainer p {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 0px;
+  margin-right: 573px;
+  margin-top: 12px;
+}
+.waterTracker img {
+  width: 700px;
+  height: 300px;
+}
+.selectorBorder {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+}
+.selector span {
+  display: flex;
+}
+
+.selector {
+  width: 108px;
+  background-color: white;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.singleDayInfo span {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.singleDayInfo p {
+  color: #3e4043;
+  font-size: 12px;
+  font-weight: 500;
+}
+.averagewaterIntakePerDay {
+  display: flex;
+  gap: 198px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.waterInvokeTodayInfo {
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.dayAndMonthWithDateContainer {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 79px;
+}
+.nav-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.nav-link p {
+  margin-bottom: 0px;
+}
+.waterInMlContainerOne,
+.waterInMlContainerTwo,
+.waterInMlContainerThree,
+.waterInMlContainerFour,
+.waterInMlContainerFive,
+.waterInMlContainerSix,
+.waterInMlContainerSeven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.waterMLWithTimeContainerSeven p,
+.waterMLWithTimeContainerSix p,
+.waterMLWithTimeContainerFive p,
+.waterMLWithTimeContainerFour p,
+.waterMLWithTimeContainerThree p,
+.waterMLWithTimeContainerTwo p,
+.waterMLWithTimeContainerOne p {
+  margin-bottom: 0px !important;
+  color: #3e4043;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.waterMLWithTimeContainerSix span,
+.waterMLWithTimeContainerFive span,
+.waterMLWithTimeContainerFour span,
+.waterMLWithTimeContainerThree span,
+.waterMLWithTimeContainerTwo span,
+.waterMLWithTimeContainerOne span,
+.waterMLWithTimeContainerSeven span {
+  color: #8d8d8d;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.moreDetailsMainContainer {
+  width: 204px;
+  margin-top: 40px;
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.moreDetailsinnerContainer {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: #2f2e2e;
+  font-weight: 500;
+  font-size: 13px;
+}
+.moreDetailsinnerContainer p {
+  margin-bottom: 0px;
+}
+/* .my-chart {
+  width: 55px !important;
+  height: 55px !important;
+} */
+.Pie-Chart-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chart-container {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.Pie-Chart-data-Container {
+  margin-left: -20px;
+}
+.weekWholeData {
+  margin-bottom: 4px;
+}
+.daysWeekMonthContainer {
+  display: flex;
+  gap: 13px;
+}
+.monthlyOverview {
+  height: 361px;
+  width: 723px;
+  border: 1px solid #909090;
+  border-radius: 7px;
+  margin-top: 54px;
+  margin-bottom: 59px;
+}
+#monthlyOverviewPara {
+  color: #091b35;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+}
+.monthlyOverviewDaysWeek {
+  padding: 31px;
+  display: flex;
+  gap: 33rem;
+}
+.weekBorder,
+.daysBorder {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+  width: 81px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.daysInnerContainer,
+.weekInnerContainer {
+  width: 94px;
+  background-color: white;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.weeksDaysContainers {
+  display: flex;
+  gap: 2rem;
+}
+.waterAllContainersInMLWithTime {
+  display: flex;
+  gap: 20px;
+}
+/Attendance Page/
+.attendanceTrackerMainContainer {
+  background-color: #fafafb;
+}
+
+.aiWhatsapp p {
+  color: #45437f;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.aiWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.premium {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.premiumTrail {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 100px;
+  height: 65px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftSideOfHeader {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.premiumTrail p {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.peterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.peterAccount span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.peterAccount p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.peterImg {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.andyPeter {
+  display: flex;
+  gap: 1rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attendanceTrackerBackgroundContainer {
+  margin-left: 55px;
+  height: 361px;
+  width: 723px;
+  margin-left: 62px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #909090;
+  border-radius: 7px;
+  align-items: center;
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+
+.attendanceTrackerBackgroundContainer p {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 0px;
+  margin-right: 525px;
+  margin-top: 12px;
+}
+
+.monthlyOverview p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #091b35;
+  margin-bottom: 2.5rem;
+}
+
+.presentApsentAndAllDetails {
+  border: 1px solid #d8d8d8;
+  border-radius: 7px 7px 0 0;
+  background-color: #f8f8f8;
+  gap: 5rem;
+  height: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.presentApsentAndAllDetails p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.allDetails {
+  margin-left: 10px;
+  /* margin-bottom: 18px; */
+}
+
+.allDetails p {
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding: 9px;
+}
+
+.allColumnContainer {
+  margin-left: 20px;
+}
+
+.presentColumnContainer p,
+.absentColumnContainer p {
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.presentColumnContainer,
+.absentColumnContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #233255cc;
+}
+
+.allCount {
+  width: 20px;
+  height: 20px;
+  background-color: #eaff8e;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.allCount p {
+  font-size: 10px;
+  margin-bottom: 0px;
+  color: #9cc000;
+  width: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underlineToAll {
+  width: 80px;
+  border-bottom: 3px solid #d2f637;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 13px;
+}
+
+.presentCount p,
+.absentCount p {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.presentCount,
+.absentCount {
+  width: 20px;
+  height: 20px;
+  background-color: #e5e5e5;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+thead {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 400;
+  color: #233255cc;
+}
+
+.upAndDownImg {
+  margin-left: 4rem;
+}
+
+td {
+  color: #233255b2;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 16px !important;
+}
+
+th {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  background-color: #d3d3d3;
+  color: #233255cc;
+}
+tbody tr {
+  text-align: center;
+}
+
+.studentAttendance {
+  background-color: white;
+  width: 48%;
+  /* height: 608px; */
+  margin-left: 62px;
+  border: 2px solid #909090;
+  border-radius: 7px;
+  font-family: "Poppins", sans-serif;
+}
+
+#highlitedColumn {
+  background-color: #faffe2;
+}
+
+.studentSchema {
+  display: flex;
+  gap: 6rem;
+}
+
+.studentDetails {
+  box-shadow: 0px 4px 8px #0000000d;
+  background-color: white;
+  width: 370px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+tbody {
+  background-color: white;
+}
+
+.studentChart {
+  font-size: 16px;
+  font-weight: 500;
+  color: #233255cc;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chartOfAllDetails span {
+  color: #4f5b77;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chartOfAllDetails {
+  margin-bottom: 2rem;
+}
+
+.chartOfAllDetails p {
+  color: #233255b2;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.studentInfo {
+  margin-bottom: 8px;
+}
+.editButton,
+.deleteButton {
+  color: #233255b2;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0.5px solid #959595;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 35px 10px 35px;
+}
+.editButton {
+  margin-right: 6rem;
+}
+.header-content {
+  text-align: center;
+  border-right: 1px solid #0000001a;
+  line-height: 0.5;
+}
+.header-contentStatus {
+  text-align: center;
+}
+/Weight page/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+html {
+  font-size: 62.3%;
+}
+.weightTrackerMainContainerInfo {
+  padding-left: 62px;
+}
+.aiWhatsapp p {
+  color: #45437f;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.aiWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.premium {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.premiumTrail {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 100px;
+  height: 65px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftSideOfHeader {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.premiumTrail p {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.peterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.peterAccount span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.peterAccount p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.peterImg {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.andyPeter {
+  display: flex;
+  gap: 1rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weightInfoMainContainer {
+  margin-top: 39px;
+  font-family: "Poppins", sans-serif;
+}
+.weightTracker img {
+  width: 700px;
+  height: 300px;
+}
+
+.weightTrackerBackgroundContainer {
+  height: 361px;
+  width: 723px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #909090;
+  border-radius: 7px;
+  align-items: center;
+  margin-top: 42px;
+}
+.weightTrackerBackgroundContainer p {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 0px;
+  margin-right: 573px;
+  margin-top: 12px;
+}
+.monthlyOverview {
+  height: 361px;
+  width: 723px;
+  border: 1px solid #909090;
+  border-radius: 7px;
+  margin-top: 54px;
+  margin-bottom: 59px;
+}
+
+.monthlyOverviewDaysWeek {
+  padding: 31px;
+  display: flex;
+  gap: 33rem;
+}
+.singleDayInfo span {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.singleDayInfo p {
+  color: #3e4043;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* .singleDayInfo p {
+margin-bottom: 21px;
+} */
+.averageWeightIncreasePerDay {
+  display: flex;
+  gap: 198px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.dayAndMonthWithDateContainer {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 79px;
+}
+.nav-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.nav-link p {
+  margin-bottom: 0px;
+}
+
+.moreDetailsMainContainer {
+  width: 204px;
+  margin-top: 40px;
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.moreDetailsinnerContainer {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: #2f2e2e;
+  font-weight: 500;
+  font-size: 13px;
+}
+.moreDetailsinnerContainer p {
+  margin-bottom: 0px;
+}
+/* .my-chart {
+  width: 55px !important;
+  height: 55px !important;
+} */
+.Pie-Chart-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chart-container {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+.Pie-Chart-data-Container {
+  margin-left: -20px;
+}
+.weekWholeData {
+  margin-bottom: 4px;
+}
+.daysWeekMonthContainer {
+  display: flex;
+  gap: 13px;
+}
+.Pie-Chart-Data-Container{
+  gap: 2rem !important;
+}
+.monthlyOverview {
+  height: 361px;
+  width: 723px;
+  border: 1px solid #909090;
+  border-radius: 7px;
+  margin-top: 54px;
+  margin-bottom: 59px;
+}
+
+.monthlyOverviewDaysWeek {
+  padding: 31px;
+  display: flex;
+  gap: 33rem;
+  justify-content: space-between;
+}
+.selectorBorder {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+}
+.selector {
+  width: 108px;
+  background-color: white;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.selector span {
+  display: flex;
+}
+#monthlyOverviewPara {
+  color: #091b35;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+}
+/Food Tracker/
+.mealTrackerMainContainer {
+  background-color: #fafafb;
+  padding-top: 8px;
+  padding-left: 62px;
+}
+
+.aiWhatsapp p {
+  color: #45437f;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.aiWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.premium {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.premiumTrail {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 100px;
+  height: 65px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftSideOfHeader {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.premiumTrail p {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.peterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.peterAccount span {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.peterAccount p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.peterImg {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  border-radius: 9px;
+}
+
+.andyPeter {
+  display: flex;
+  gap: 1rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mealTrackerBackgroundContainer {
+  height: 361px;
+  width: 723px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #909090;
+  border-radius: 7px;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.mealTrackerBackgroundContainer p {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 0px;
+  margin-right: 587px;
+  margin-top: 12px;
+}
+.allAboutMeal h5 {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+.allAboutMeal p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3e4043;
+  width: 50%;
+}
+.outerDivDays {
+  width: 92px;
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+
+.innerDivDays {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.alAboutDayAndMeal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 1rem;
+}
+#todayDay {
+  color: #3e4043;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.dayAndMealInnerContainer {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+.onlyWeekAndDayContainer {
+  display: flex;
+  gap: 2rem;
+}
+.allTheDataOfMeal {
+  margin-top: 26px;
+}
+.nav-item {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.eatingToday P {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3e4043;
+}
+.foodVariety {
+  padding-bottom: 2rem;
+  padding-top: 58px;
+  display: flex;
+  gap: 2rem;
+}
+.steakContainer,
+.vegFoodContainer,
+.mealContainer {
+  font-family: "Poppins", sans-serif;
+  width: 117px;
+  height: 90px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  box-shadow: 19px 6px 10px #aeaec066;
+  /* box-shadow: 0px 4px 10px #AEAEC066; */
+}
+.steakContainer p,
+.vegFoodContainer p,
+.mealContainer p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.steakContainer span,
+.vegFoodContainer span,
+.mealContainer span {
+  font-size: 8px;
+  font-weight: 400;
+  color: #a5a5a5;
+}
+.steakContainer img {
+  margin-top: -42px;
+  margin-left: 11px;
+}
+.vegFoodContainer img {
+  margin-top: -53px;
+  margin-left: 3px;
+}
+.mealContainer img {
+  margin-top: -47px;
+  margin-left: 11px;
+}
+.streakAndIngredients,
+.vegAndIngredients,
+.mealAndIngredients {
+  margin-left: 11px;
+}
+.mealAndIngredients {
+  margin-top: 14px;
+}
+.moreDetailsMainContainer {
+  width: 204px;
+  margin-top: 40px;
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+}
+.moreDetailsinnerContainer {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: #2f2e2e;
+  font-weight: 500;
+  font-size: 13px;
+}
+.moreDetailsinnerContainer p {
+  margin-bottom: 0px;
+}
+.monthlyOverviewDaysWeekMealContainer {
+  display: flex;
+  gap: 71rem;
+  margin-top: 44px;
+}
+.selectorBorder {
+  border-radius: 100px;
+  padding: 2px;
+  background: linear-gradient(to right, #feff02, #596c00);
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+}
+.selector {
+  width: 108px;
+  background-color: white;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.selector span {
+  display: flex;
+}
+.nav-link {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.nav-link p {
+  margin-bottom: 0px;
+}
