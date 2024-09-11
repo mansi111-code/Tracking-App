@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Water Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <nav>
+            <div class="navContainer">
+                <div class="aiWhatsapp">
+                    <img src="Images/aiwhatsapp.png" width="28px" height="28px" />
+                    <p>AiWhatsApp</p>
+                </div>
+                <div class="leftSideOfHeader">
+                    <div class="premium">
+                        <div class="premiumTrail">
+                            <p>Start your Hook Premium Trial</p>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <svg width="18" height="18" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.984 0.857979C12.071 1.02698 12.093 1.24398 12.136 1.67798C12.218 2.49798 12.259 2.90798 12.431 3.13398C12.5382 3.2743 12.6806 3.38375 12.8437 3.45119C13.0069 3.51864 13.185 3.54168 13.36 3.51798C13.64 3.48098 13.96 3.21998 14.598 2.69798C14.935 2.42098 15.104 2.28298 15.285 2.22498C15.5155 2.15132 15.7649 2.16375 15.987 2.25998C16.162 2.33598 16.317 2.48998 16.624 2.79798L17.518 3.69198C17.826 3.99998 17.98 4.15398 18.056 4.32898C18.1522 4.55103 18.1647 4.80045 18.091 5.03098C18.033 5.21198 17.895 5.38098 17.619 5.71798C17.096 6.35698 16.835 6.67598 16.797 6.95698C16.7736 7.13188 16.7969 7.30985 16.8645 7.47284C16.9321 7.63583 17.0417 7.77802 17.182 7.88498C17.407 8.05698 17.818 8.09798 18.639 8.17998C19.072 8.22298 19.289 8.24498 19.459 8.33198C19.6735 8.44318 19.8404 8.62824 19.929 8.85298C20 9.02998 20 9.24798 20 9.68398V10.948C20 11.384 20 11.602 19.93 11.778C19.8411 12.0034 19.6734 12.1889 19.458 12.3C19.289 12.387 19.072 12.409 18.638 12.452C17.818 12.534 17.408 12.575 17.182 12.747C17.0417 12.8541 16.9322 12.9965 16.8648 13.1597C16.7973 13.3229 16.7743 13.501 16.798 13.676C16.836 13.956 17.097 14.276 17.619 14.914C17.895 15.251 18.033 15.419 18.091 15.601C18.1647 15.8315 18.1522 16.0809 18.056 16.303C17.98 16.478 17.826 16.632 17.518 16.94L16.624 17.833C16.316 18.142 16.162 18.296 15.987 18.371C15.7649 18.4672 15.5155 18.4796 15.285 18.406C15.104 18.348 14.935 18.21 14.598 17.934C13.959 17.412 13.64 17.151 13.36 17.114C13.185 17.0903 13.0069 17.1133 12.8437 17.1808C12.6806 17.2482 12.5382 17.3577 12.431 17.498C12.259 17.723 12.218 18.133 12.136 18.954C12.093 19.388 12.071 19.605 11.984 19.774C11.8732 19.9892 11.6881 20.1569 11.463 20.246C11.286 20.316 11.068 20.316 10.632 20.316H9.368C8.932 20.316 8.714 20.316 8.538 20.246C8.31256 20.1571 8.12706 19.9894 8.016 19.774C7.929 19.605 7.907 19.388 7.864 18.954C7.782 18.134 7.741 17.724 7.569 17.498C7.46192 17.3578 7.31968 17.2485 7.1567 17.181C6.99372 17.1136 6.81581 17.0905 6.641 17.114C6.36 17.151 6.041 17.412 5.402 17.934C5.065 18.211 4.896 18.349 4.715 18.407C4.48447 18.4806 4.23506 18.4682 4.013 18.372C3.838 18.296 3.683 18.142 3.376 17.834L2.482 16.94C2.174 16.632 2.02 16.478 1.944 16.303C1.84777 16.0809 1.83534 15.8315 1.909 15.601C1.967 15.42 2.105 15.251 2.381 14.914C2.904 14.275 3.165 13.956 3.202 13.675C3.22552 13.5002 3.20239 13.3223 3.13495 13.1593C3.06751 12.9963 2.95816 12.8541 2.818 12.747C2.593 12.575 2.182 12.534 1.361 12.452C0.928 12.409 0.711 12.387 0.541 12.3C0.326547 12.1888 0.159596 12.0037 0.0710001 11.779C9.68575e-08 11.602 0 11.384 0 10.948V9.68398C0 9.24798 -6.70552e-08 9.02998 0.0699999 8.85398C0.158887 8.62854 0.326615 8.44304 0.542 8.33198C0.711 8.24498 0.928 8.22298 1.362 8.17998C2.182 8.09798 2.593 8.05698 2.818 7.88498C2.95834 7.77802 3.06788 7.63583 3.1355 7.47284C3.20312 7.30985 3.22641 7.13188 3.203 6.95698C3.165 6.67598 2.903 6.35698 2.381 5.71698C2.105 5.37998 1.967 5.21198 1.909 5.02998C1.83534 4.79945 1.84777 4.55003 1.944 4.32798C2.02 4.15398 2.174 3.99898 2.482 3.69098L3.376 2.79798C3.684 2.48998 3.838 2.33498 4.013 2.25998C4.23506 2.16375 4.48447 2.15132 4.715 2.22498C4.896 2.28298 5.065 2.42098 5.402 2.69698C6.041 3.21898 6.36 3.47998 6.64 3.51798C6.81521 3.54176 6.9936 3.51865 7.15697 3.45102C7.32034 3.38338 7.46286 3.27364 7.57 3.13298C7.74 2.90798 7.782 2.49798 7.864 1.67698C7.907 1.24398 7.929 1.02698 8.016 0.856979C8.12701 0.64215 8.3121 0.474822 8.537 0.385979C8.714 0.315979 8.932 0.315979 9.368 0.315979H10.632C11.068 0.315979 11.286 0.315979 11.462 0.385979C11.6874 0.474866 11.8729 0.642594 11.984 0.857979ZM10 14.316C11.0609 14.316 12.0783 13.8946 12.8284 13.1444C13.5786 12.3943 14 11.3768 14 10.316C14 9.25511 13.5786 8.2377 12.8284 7.48755C12.0783 6.73741 11.0609 6.31598 10 6.31598C8.93913 6.31598 7.92172 6.73741 7.17157 7.48755C6.42143 8.2377 6 9.25511 6 10.316C6 11.3768 6.42143 12.3943 7.17157 13.1444C7.92172 13.8946 8.93913 14.316 10 14.316Z"
+                                fill="#5C5B5B" />
+                        </svg>
+                    </div>
+                    <div class="andyPeter">
+                        <div class="peterImg">
+                            <img src="Images/man.png" alt="" width="45px" height="43px" />
+                        </div>
+                        <div class="peterAccount">
+                            <span>Andy peter</span>
+                            <p>Free Account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="waterTrackerMainContainerInfo">
+            <div class="waterTrackerBackgroundContainer">
+                <div class="waterTracker">
+                    <img src="Images/water.png" alt="">
+                </div>
+                <p>Water Tracker</p>
+            </div>
+            <div class="waterInfoMainContainer">
+                <div class="singleDayInfo">
+                    <div class="dayAndMonthWithDateContainer">
+                        <div class="dayWithDate">
+                            <span>Today, Thursday</span>
+                            <p>24 April 2023</p>
+                        </div>
+                        <div class="daysWeekMonthContainer">
+                            <div class="selectorBorder">
+                                <div class="selector">
+                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <p>
+                                            Days</p><span>
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.35644 5.52013C5.22895 5.64758 5.05606 5.71918 4.8758 5.71918C4.69553 5.71918 4.52264 5.64758 4.39515 5.52013L0.549342 1.67432C0.484411 1.61161 0.43262 1.53659 0.39699 1.45365C0.361361 1.37071 0.342607 1.2815 0.341823 1.19123C0.341038 1.10097 0.358239 1.01145 0.392422 0.927897C0.426604 0.844348 0.477084 0.768443 0.540915 0.704611C0.604747 0.64078 0.680651 0.5903 0.7642 0.556118C0.847749 0.521935 0.937269 0.504734 1.02754 0.505519C1.1178 0.506303 1.20701 0.525057 1.28995 0.560687C1.3729 0.596316 1.44791 0.648107 1.51063 0.713038L4.8758 4.07821L8.24097 0.713038C8.36918 0.589201 8.54091 0.520678 8.71916 0.522227C8.89741 0.523775 9.06792 0.595273 9.19397 0.721319C9.32001 0.847365 9.39151 1.01788 9.39306 1.19613C9.39461 1.37438 9.32609 1.5461 9.20225 1.67432L5.35644 5.52013Z"
+                                                    fill="black" />
+                                            </svg>
+                                    </a></span>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">1</a></li>
+                                        <li><a class="dropdown-item" href="#">2</a></li>
+                                        <li><a class="dropdown-item" href="#">3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="selectorBorder">
+                                <div class="selector">
+                                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <p>
+                                            Week</p><span>
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.35644 5.52013C5.22895 5.64758 5.05606 5.71918 4.8758 5.71918C4.69553 5.71918 4.52264 5.64758 4.39515 5.52013L0.549342 1.67432C0.484411 1.61161 0.43262 1.53659 0.39699 1.45365C0.361361 1.37071 0.342607 1.2815 0.341823 1.19123C0.341038 1.10097 0.358239 1.01145 0.392422 0.927897C0.426604 0.844348 0.477084 0.768443 0.540915 0.704611C0.604747 0.64078 0.680651 0.5903 0.7642 0.556118C0.847749 0.521935 0.937269 0.504734 1.02754 0.505519C1.1178 0.506303 1.20701 0.525057 1.28995 0.560687C1.3729 0.596316 1.44791 0.648107 1.51063 0.713038L4.8758 4.07821L8.24097 0.713038C8.36918 0.589201 8.54091 0.520678 8.71916 0.522227C8.89741 0.523775 9.06792 0.595273 9.19397 0.721319C9.32001 0.847365 9.39151 1.01788 9.39306 1.19613C9.39461 1.37438 9.32609 1.5461 9.20225 1.67432L5.35644 5.52013Z"
+                                                    fill="black" />
+                                            </svg>
+                                    </a></span>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">1</a></li>
+                                        <li><a class="dropdown-item" href="#">2</a></li>
+                                        <li><a class="dropdown-item" href="#">3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weekWholeData">
+                        <div class="Pie-Chart-Data-Container d-flex">
+                            <div class="Pie-Chart-Container">
+                                <div class="chart-container">
+                                    <canvas id="chart-sunday" class="my-chart"></canvas>
+                                </div>
+                                <p>Sn</p>
+                            </div>
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-monday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>Mn</p>
+                                </div>
+                            </div>
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-tuesday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>Tu</p>
+                                </div>
+                            </div>
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-wednesday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>Wd</p>
+                                </div>
+                            </div>
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-thursday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>Th</p>
+                                </div>
+                            </div>
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-friday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>Fr</p>
+                                </div>
+                            </div>
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-saturday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>St</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="todayWaterInML">
+                    <div class="averagewaterIntakePerDay">
+                        <p>Average Water Intake Per day</p>
+                        <p>(2.7 liters) per day</p>
+                    </div>
+                    <div class="waterInvokeTodayInfo">
+                        <p><u>Water Intake Today</u></p>
+                    </div>
+                    <div class="waterAllContainersInMLWithTime">
+                        <div class="waterInMlContainerOne">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerOne">
+                                <p>500 ML</p>
+                                <span>8:20 AM</span>
+                            </div>
+                        </div>
+                        <div class="waterInMlContainerTwo">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerTwo">
+                                <p>200 ML</p>
+                                <span>10:12 AM</span>
+                            </div>
+                        </div>
+                        <div class="waterInMlContainerThree">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerThree">
+                                <p>100 ML</p>
+                                <span>12:10 AM</span>
+                            </div>
+                        </div>
+                        <div class="waterInMlContainerFour">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerFour">
+                                <p>225 ML</p>
+                                <span>1:36 AM</span>
+                            </div>
+                        </div>
+                        <div class="waterInMlContainerFive">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerFive">
+                                <p>180 ML</p>
+                                <span>3:50 AM</span>
+                            </div>
+                        </div>
+                        <div class="waterInMlContainerSix">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerSix">
+                                <p>200 ML</p>
+                                <span>7:50 AM</span>
+                            </div>
+                        </div>
+                        <div class="waterInMlContainerSeven">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 16.4999H8L12 10.4999H9V6.49988H8L4 12.4999H7V16.4999ZM8 20.4999C5.71667 20.4999 3.81267 19.7165 2.288 18.1499C0.763333 16.5832 0.000666667 14.6332 0 12.2999C0 10.6332 0.662667 8.82088 1.988 6.86288C3.31333 4.90488 5.31733 2.78388 8 0.499878C10.6833 2.78321 12.6877 4.90421 14.013 6.86288C15.3383 8.82154 16.0007 10.6339 16 12.2999C16 14.6332 15.2377 16.5832 13.713 18.1499C12.1883 19.7165 10.284 20.4999 8 20.4999ZM8 18.4999C9.73333 18.4999 11.1667 17.9122 12.3 16.7369C13.4333 15.5615 14 14.0825 14 12.2999C14 11.0832 13.4957 9.70821 12.487 8.17488C11.4783 6.64154 9.98267 4.96654 8 3.14988C6.01667 4.96654 4.521 6.64154 3.513 8.17488C2.505 9.70821 2.00067 11.0832 2 12.2999C2 14.0832 2.56667 15.5625 3.7 16.7379C4.83333 17.9132 6.26667 18.5005 8 18.4999Z"
+                                    fill="#3E4043" />
+                            </svg>
+                            <div class="waterMLWithTimeContainerSeven">
+                                <p>210 ML</p>
+                                <span>10:50 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moreDetailsMainContainer">
+                        <div class="moreDetailsinnerContainer">
+                            <p>See More Details</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="monthlyOverview">
+                <div class="monthlyOverviewDaysWeek">
+                    <p id="monthlyOverviewPara">Monthly Overview</p>
+                    <div class="weeksDaysContainers">
+                        <div class="selectorBorder">
+                            <div class="selector">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <p>
+                                        Month</p><span>
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.35644 5.52013C5.22895 5.64758 5.05606 5.71918 4.8758 5.71918C4.69553 5.71918 4.52264 5.64758 4.39515 5.52013L0.549342 1.67432C0.484411 1.61161 0.43262 1.53659 0.39699 1.45365C0.361361 1.37071 0.342607 1.2815 0.341823 1.19123C0.341038 1.10097 0.358239 1.01145 0.392422 0.927897C0.426604 0.844348 0.477084 0.768443 0.540915 0.704611C0.604747 0.64078 0.680651 0.5903 0.7642 0.556118C0.847749 0.521935 0.937269 0.504734 1.02754 0.505519C1.1178 0.506303 1.20701 0.525057 1.28995 0.560687C1.3729 0.596316 1.44791 0.648107 1.51063 0.713038L4.8758 4.07821L8.24097 0.713038C8.36918 0.589201 8.54091 0.520678 8.71916 0.522227C8.89741 0.523775 9.06792 0.595273 9.19397 0.721319C9.32001 0.847365 9.39151 1.01788 9.39306 1.19613C9.39461 1.37438 9.32609 1.5461 9.20225 1.67432L5.35644 5.52013Z"
+                                                fill="black" />
+                                        </svg>
+                                </a></span>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chartContainer">
+                    <canvas id="waterTrackerBarChart" width="600" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        const ctx = document.getElementById('waterTrackerBarChart').getContext('2d');
+        const waterTrackerBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
+                datasets: [{
+                    label: 'Water Intake (Liters)',
+                    data: [2.5, 3, 1.8, 2.2, 2.6, 3.5, 2.8, 3.1, 2.7, 2.9, 3.4, 2, 1.8, 3, 3.2, 2.7, 2.5, 3.6, 2.8, 3, 2.5, 3.4, 3.1, 2.9, 3.2, 2.8, 2, 2.7, 3.3, 3.5, 3.7], // Water intake data
+                    backgroundColor: '#7CBA22', // Green color as per the design
+                    borderColor: '#7CBA22',
+                    barThickness: 8.8, // Adjust the thickness as per the design
+                    borderRadius: {
+                        topLeft: 8, // Rounded corners on top
+                        topRight: 8,
+                        bottomLeft: 0,
+                        bottomRight: 0
+                    }
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 6, // Max liters as shown in the design
+                        title: {
+                            display: true,
+                        },
+                        ticks: {
+                            stepSize: 1, // Increment by 1 liter
+                            callback: function (value) {
+                                return value + 'L'; // Display liters
+                            }
+                        },
+                        grid: {
+                            display: false,
+                            color: '#E0E0E0' // Light grey grid lines for better visibility
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                        },
+                        grid: {
+                            display: false // Hide x-axis grid lines for a clean look
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                return context.dataset.label + ': ' + context.raw + 'L';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <script>
+        const waterData = {
+            sunday: [0.9, 2.1], // 0.9 liters left to drink, 2.1 liters consumed
+            monday: [1.2, 1.8],
+            tuesday: [0.6, 2.4],
+            wednesday: [1.5, 1.5],
+            thursday: [1.0, 2.0],
+            friday: [1.3, 1.7],
+            saturday: [0.7, 2.3],
+        };
+
+        const chartIds = [
+            'chart-sunday',
+            'chart-monday',
+            'chart-tuesday',
+            'chart-wednesday',
+            'chart-thursday',
+            'chart-friday',
+            'chart-saturday'
+        ];
+
+        const centerTextPlugin = {
+            id: 'centerText',
+            beforeDraw: function (chart) {
+                const ctx = chart.ctx;
+                const width = chart.width;
+                const height = chart.height;
+                const fontSize = "10px";
+
+                const waterConsumed = chart.config.data.datasets[0].data[1];
+                const text = waterConsumed + "L"; // Display liters consumed in the center
+                ctx.restore();
+                ctx.font = fontSize + " Arial";
+                ctx.textBaseline = "middle";
+                ctx.textAlign = "center";
+
+                const textX = width / 2;
+                const textY = height / 2;
+
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            },
+        };
+
+        chartIds.forEach((id) => {
+            const canvas = document.getElementById(id);
+            const day = id.split('-')[1];
+
+            new Chart(canvas, {
+                type: "doughnut",
+                data: {
+                    labels: ["Left to Drink (L)", "Water Consumed (L)"],
+                    datasets: [
+                        {
+                            label: "Water Tracking",
+                            data: waterData[day],
+                            backgroundColor: ["#45437F","#91AF01"], 
+                        },
+                    ],
+                },
+                options: {
+                    borderWidth: 0,
+                    borderRadius: 0,
+                    hoverBorderWidth: 0,
+                    plugins: {
+                        legend: {
+                            display: false,
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.label + ': ' + context.raw + 'L'; // Display tooltip in liters
+                                }
+                            }
+                        }
+                    },
+                },
+                plugins: [centerTextPlugin],
+            });
+        });
+    </script>
+
+    </script>
+
+    <script src="chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
