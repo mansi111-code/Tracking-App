@@ -217,8 +217,8 @@ a {
 }
 .informationForHealth img,
 .informationForFood img {
-  height: 204px;
-  width: 250px;
+  width: 92%;
+  height: auto;
 }
 .morningBreakfast,
 .lunch,
@@ -246,7 +246,30 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
-/Sleep Page Style/
+@media(max-width:1200px){
+  .sleep,.water,.weight,.attendence{
+    width: 250px;
+    height: 260px;
+  }
+  .morningBreakfast,.eveBreakfast,.lunch,.dinner{
+    width: 250px;
+    height: 260px;
+  }
+  .sleep p {
+    padding-right: 190px;}
+    .water p {
+      padding-right: 186px;
+    }
+    .attendence p {
+      padding-right: 142px;}
+      .weight p {
+        padding-right: 175px;
+      }
+      .morningBreakfast p, .lunch p, .eveBreakfast p, .dinner p {
+        padding-right: 174px;}      
+}
+
+/* /Sleep Page Style/ */
 .sleepTrackerMainContainerInfo {
   padding-left: 62px;
 }
@@ -540,7 +563,7 @@ a {
   display: flex;
   gap: 33rem;
 }
-/Water Page/
+/* /Water Page/ */
 .waterTrackerMainContainerInfo {
   padding-left: 62px;
 }
@@ -857,7 +880,7 @@ a {
   display: flex;
   gap: 20px;
 }
-/Attendance Page/
+/* /Attendance Page/ */
 .attendanceTrackerMainContainer {
   background-color: #fafafb;
 }
@@ -1190,7 +1213,7 @@ tbody {
 .header-contentStatus {
   text-align: center;
 }
-/Weight page/
+/* /Weight page/ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0%;
@@ -1468,7 +1491,7 @@ margin-bottom: 21px;
   font-weight: 600;
   display: flex;
 }
-/Food Tracker/
+/* /Food Tracker/ */
 .mealTrackerMainContainer {
   background-color: #fafafb;
   padding-top: 8px;
