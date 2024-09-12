@@ -368,8 +368,9 @@ a {
   font-family: "Poppins", sans-serif;
 }
 .sleepTrackerBackgroundContainer {
-  height: 361px;
-  width: 723px;
+  height: 379px;
+  width: 729px;
+  gap: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -385,7 +386,7 @@ a {
   font-size: 17px;
   margin-bottom: 0px;
   margin-right: 573px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 .selectorBorder {
   border-radius: 100px;
@@ -398,8 +399,12 @@ a {
   height: 36px;
 }
 .sleepTracker img {
-  width: 700px;
-  height: 300px;
+  width: 97%;
+  height: auto;
+}
+.sleepTracker{
+  display: flex;
+  justify-content: center;
 }
 .selector {
   width: 108px;
@@ -563,6 +568,12 @@ a {
   display: flex;
   gap: 33rem;
 }
+@media(max-width:1200px){
+  .sleepToWakeupInfo{
+    width: 61%;
+  }
+}
+
 /* /Water Page/ */
 .waterTrackerMainContainerInfo {
   padding-left: 62px;
@@ -663,8 +674,9 @@ a {
 }
 
 .waterTrackerBackgroundContainer {
-  height: 361px;
-  width: 723px;
+  height: 379px;
+  width: 729px;
+  gap: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -680,12 +692,15 @@ a {
   font-size: 17px;
   margin-bottom: 0px;
   margin-right: 573px;
-  margin-top: 12px;
 }
 .waterTracker img {
-  width: 700px;
-  height: 300px;
+  width: 97%;
+  height: auto;
 }
+.waterTracker{
+  display: flex;
+  justify-content: center;}
+
 .selectorBorder {
   border-radius: 100px;
   padding: 2px;
@@ -978,8 +993,9 @@ a {
 
 .attendanceTrackerBackgroundContainer {
   margin-left: 55px;
-  height: 361px;
-  width: 723px;
+  height: 379px;
+  width: 729px;
+  gap: 1rem;
   margin-left: 62px;
   display: flex;
   justify-content: center;
@@ -1000,7 +1016,13 @@ a {
   margin-right: 525px;
   margin-top: 12px;
 }
-
+.attendanceTracker img{
+  width: 97%;
+  height: auto;
+}
+.attendanceTracker{
+  display: flex;
+  justify-content: center;}
 .monthlyOverview p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1321,13 +1343,17 @@ html {
   font-family: "Poppins", sans-serif;
 }
 .weightTracker img {
-  width: 700px;
-  height: 300px;
+  width: 97%;
+  height: auto;
 }
+.weightTracker{
+  display: flex;
+  justify-content: center;}
 
 .weightTrackerBackgroundContainer {
-  height: 361px;
-  width: 723px;
+  height: 379px;
+  width: 729px;
+  gap: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1343,7 +1369,6 @@ html {
   font-size: 17px;
   margin-bottom: 0px;
   margin-right: 573px;
-  margin-top: 12px;
 }
 .monthlyOverview {
   height: 361px;
@@ -1590,8 +1615,9 @@ margin-bottom: 21px;
 }
 
 .mealTrackerBackgroundContainer {
-  height: 361px;
-  width: 723px;
+  height: 379px;
+  width: 729px;
+  gap: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1608,7 +1634,13 @@ margin-bottom: 21px;
   font-size: 17px;
   margin-bottom: 0px;
   margin-right: 587px;
-  margin-top: 12px;
+}
+.mealTracker{
+display: flex;
+justify-content: center;}
+.mealTracker img{
+  width: 97%;
+  height: auto;
 }
 .allAboutMeal h5 {
   color: #3e4043;
@@ -1718,8 +1750,8 @@ margin-bottom: 21px;
   margin-top: -47px;
   margin-left: 11px;
 }
-.streakAndIngredients,
-.vegAndIngredients,
+.steakAndIngredients ,
+.vegAndIngredients ,
 .mealAndIngredients {
   margin-left: 11px;
 }
