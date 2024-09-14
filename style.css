@@ -217,8 +217,10 @@ a {
 }
 .informationForHealth img,
 .informationForFood img {
-  width: 92%;
-  height: auto;
+  /* width: 92%;
+  height: auto; */
+  height: 204px;
+  width: 250px;
 }
 .morningBreakfast,
 .lunch,
