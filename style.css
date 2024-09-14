@@ -1872,14 +1872,7 @@ margin-bottom: 21px;
     padding-right: 161px;
   }
 }
-@media (max-width: 768px) {
-  .informationForHealth,
-  .informationForFood {
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+@media (max-width: 720px) {
   .sleepTracker img {
     width: 497px;
     height: 270px;
@@ -1891,6 +1884,16 @@ margin-bottom: 21px;
     height: 322px;
     width: 516px;
   }
+}
+@media (max-width: 768px) {
+  .informationForHealth,
+  .informationForFood {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
 }
 @media (max-width: 720px) {
   .searchBar {
