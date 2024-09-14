@@ -399,8 +399,8 @@ a {
   height: 36px;
 }
 .sleepTracker img {
-  width: 97%;
-  height: auto;
+  width: 700px;
+  height: 300px;
 }
 .sleepTracker{
   display: flex;
