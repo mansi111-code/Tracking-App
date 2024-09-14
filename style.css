@@ -296,7 +296,16 @@ height: 222px;
   display: flex;
   align-items: center;
   flex-direction: column;
-}}
+}.sleepTracker img {
+  width: 497px;
+  height: 270px;
+}.sleepTrackerBackgroundContainer p {
+  margin-right: 374px;}
+  .sleepTrackerBackgroundContainer {
+    height: 322px;
+    width: 516px;
+}
+}
 @media(max-width:720px){
   .searchBar{
   margin-left: 60px;
