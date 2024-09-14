@@ -198,10 +198,8 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
-.informationForHealth,.informationForFood  {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 83px;
+.informationForHealth,
+.informationForFood {
   gap: 2rem;
   align-items: center;
   flex-direction: column;
@@ -242,78 +240,7 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
-@media(max-width:1200px){
-  .sleep,.water,.weight,.attendence{
-    width: 250px;
-    height: 260px;
-  }
-  .morningBreakfast,.eveBreakfast,.lunch,.dinner{
-    width: 250px;
-    height: 260px;
-  }
-  .sleep p {
-    padding-right: 190px;}
-    .water p {
-      padding-right: 186px;
-    }
-    .attendence p {
-      padding-right: 142px;}
-      .weight p {
-        padding-right: 175px;
-      }
-      .morningBreakfast p, .lunch p, .eveBreakfast p, .dinner p {
-        padding-right: 174px;}      
-}
-@media(max-width:1200px){
-  .informationForHealth img,
-  .informationForFood img {
-    height: 159px;
-    width: 203px;
-}
-.sleep,.water,.attendence,.weight,.morningBreakfast,.eveBreakfast,.lunch,.dinner{
-width: 232px;
-height: 222px;
-}
-.sleep p {
-  padding-right: 167px;
-}
-.water p {
-  padding-right: 160px;
-}
-.attendence p {
-  padding-right: 122px;
-}
-.weight p {
-  padding-right: 149px;
-}
-.morningBreakfast p, .lunch p, .eveBreakfast p, .dinner p {
-  padding-right: 161px;
-}
-}
-@media(max-width:768px){
-.informationForHealth,.informationForFood  {
-  gap: 2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}.sleepTracker img {
-  width: 497px;
-  height: 270px;
-}.sleepTrackerBackgroundContainer p {
-  margin-right: 374px;}
-  .sleepTrackerBackgroundContainer {
-    height: 322px;
-    width: 516px;
-}
-}
-@media(max-width:720px){
-  .searchBar{
-  margin-left: 60px;
-}.navContainer{
-  padding-left: 21px;
-  padding-right: 24px;
-}
-}
+
 /* /Sleep Page Style/ */
 .sleepTrackerMainContainerInfo {
   padding-left: 62px;
@@ -447,7 +374,7 @@ height: 222px;
   width: 700px;
   height: 300px;
 }
-.sleepTracker{
+.sleepTracker {
   display: flex;
   justify-content: center;
 }
@@ -583,7 +510,7 @@ height: 222px;
 .Pie-Chart-data-Container {
   margin-left: -20px;
 }
-.Pie-Chart-Data-Container{
+.Pie-Chart-Data-Container {
   gap: 2rem;
 }
 .weekWholeData {
@@ -613,8 +540,8 @@ height: 222px;
   display: flex;
   gap: 33rem;
 }
-@media(max-width:1200px){
-  .sleepToWakeupInfo{
+@media (max-width: 1200px) {
+  .sleepToWakeupInfo {
     width: 61%;
   }
 }
@@ -744,9 +671,10 @@ height: 222px;
   width: 700px;
   height: 300px;
 }
-.waterTracker{
+.waterTracker {
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .selectorBorder {
   border-radius: 100px;
@@ -1063,15 +991,16 @@ height: 222px;
   margin-right: 525px;
   margin-top: 12px;
 }
-.attendanceTracker img{
+.attendanceTracker img {
   /* width: 97%;
   height: auto; */
   width: 700px;
   height: 300px;
 }
-.attendanceTracker{
+.attendanceTracker {
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+}
 .monthlyOverview p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1397,9 +1326,10 @@ html {
   width: 700px;
   height: 300px;
 }
-.weightTracker{
+.weightTracker {
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .weightTrackerBackgroundContainer {
   height: 379px;
@@ -1520,7 +1450,7 @@ margin-bottom: 21px;
   display: flex;
   gap: 13px;
 }
-.Pie-Chart-Data-Container{
+.Pie-Chart-Data-Container {
   gap: 2rem !important;
 }
 .monthlyOverview {
@@ -1686,10 +1616,11 @@ margin-bottom: 21px;
   margin-bottom: 0px;
   margin-right: 587px;
 }
-.mealTracker{
-display: flex;
-justify-content: center;}
-.mealTracker img{
+.mealTracker {
+  display: flex;
+  justify-content: center;
+}
+.mealTracker img {
   /* width: 97%;
   height: auto; */
   width: 700px;
@@ -1803,8 +1734,8 @@ justify-content: center;}
   margin-top: -47px;
   margin-left: 11px;
 }
-.steakAndIngredients ,
-.vegAndIngredients ,
+.steakAndIngredients,
+.vegAndIngredients,
 .mealAndIngredients {
   margin-left: 11px;
 }
@@ -1869,4 +1800,104 @@ justify-content: center;}
 }
 .nav-link p {
   margin-bottom: 0px;
+}
+/* index */
+@media (max-width: 1200px) {
+  .sleep,
+  .water,
+  .weight,
+  .attendence {
+    width: 250px;
+    height: 260px;
+  }
+  .morningBreakfast,
+  .eveBreakfast,
+  .lunch,
+  .dinner {
+    width: 250px;
+    height: 260px;
+  }
+  .sleep p {
+    padding-right: 190px;
+  }
+  .water p {
+    padding-right: 186px;
+  }
+  .attendence p {
+    padding-right: 142px;
+  }
+  .weight p {
+    padding-right: 175px;
+  }
+  .morningBreakfast p,
+  .lunch p,
+  .eveBreakfast p,
+  .dinner p {
+    padding-right: 174px;
+  }
+}
+@media (max-width: 1200px) {
+  .informationForHealth img,
+  .informationForFood img {
+    height: 159px;
+    width: 203px;
+  }
+  .sleep,
+  .water,
+  .attendence,
+  .weight,
+  .morningBreakfast,
+  .eveBreakfast,
+  .lunch,
+  .dinner {
+    width: 232px;
+    height: 222px;
+  }
+  .sleep p {
+    padding-right: 167px;
+  }
+  .water p {
+    padding-right: 160px;
+  }
+  .attendence p {
+    padding-right: 122px;
+  }
+  .weight p {
+    padding-right: 149px;
+  }
+  .morningBreakfast p,
+  .lunch p,
+  .eveBreakfast p,
+  .dinner p {
+    padding-right: 161px;
+  }
+}
+@media (max-width: 768px) {
+  .informationForHealth,
+  .informationForFood {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sleepTracker img {
+    width: 497px;
+    height: 270px;
+  }
+  .sleepTrackerBackgroundContainer p {
+    margin-right: 374px;
+  }
+  .sleepTrackerBackgroundContainer {
+    height: 322px;
+    width: 516px;
+  }
+}
+@media (max-width: 720px) {
+  .searchBar {
+    margin-left: 60px;
+  }
+  .navContainer {
+    padding-left: 21px;
+    padding-right: 24px;
+  }
 }
