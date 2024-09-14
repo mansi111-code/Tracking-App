@@ -694,8 +694,10 @@ a {
   margin-right: 573px;
 }
 .waterTracker img {
-  width: 97%;
-  height: auto;
+  /* width: 97%;
+  height: auto; */
+  width: 700px;
+  height: 300px;
 }
 .waterTracker{
   display: flex;
@@ -1017,8 +1019,10 @@ a {
   margin-top: 12px;
 }
 .attendanceTracker img{
-  width: 97%;
-  height: auto;
+  /* width: 97%;
+  height: auto; */
+  width: 700px;
+  height: 300px;
 }
 .attendanceTracker{
   display: flex;
@@ -1343,8 +1347,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 .weightTracker img {
-  width: 97%;
-  height: auto;
+  /* width: 97%;
+  height: auto; */
+  width: 700px;
+  height: 300px;
 }
 .weightTracker{
   display: flex;
@@ -1639,8 +1645,10 @@ margin-bottom: 21px;
 display: flex;
 justify-content: center;}
 .mealTracker img{
-  width: 97%;
-  height: auto;
+  /* width: 97%;
+  height: auto; */
+  width: 700px;
+  height: 300px;
 }
 .allAboutMeal h5 {
   color: #3e4043;
