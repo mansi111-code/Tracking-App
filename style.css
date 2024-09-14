@@ -297,6 +297,14 @@ height: 222px;
   align-items: center;
   flex-direction: column;
 }}
+@media(max-width:720px){
+  .searchBar{
+  margin-left: 60px;
+}.navContainer{
+  padding-left: 21px;
+  padding-right: 24px;
+}
+}
 /* /Sleep Page Style/ */
 .sleepTrackerMainContainerInfo {
   padding-left: 62px;
