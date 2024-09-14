@@ -217,8 +217,6 @@ a {
 }
 .informationForHealth img,
 .informationForFood img {
-  /* width: 92%;
-  height: auto; */
   height: 204px;
   width: 250px;
 }
@@ -270,7 +268,32 @@ a {
       .morningBreakfast p, .lunch p, .eveBreakfast p, .dinner p {
         padding-right: 174px;}      
 }
-
+@media(max-width:1200px){
+  .informationForHealth img,
+  .informationForFood img {
+    height: 159px;
+    width: 203px;
+}
+.sleep,.water,.attendence,.weight,.morningBreakfast,.eveBreakfast,.lunch,.dinner{
+width: 232px;
+height: 222px;
+}
+.sleep p {
+  padding-right: 167px;
+}
+.water p {
+  padding-right: 160px;
+}
+.attendence p {
+  padding-right: 122px;
+}
+.weight p {
+  padding-right: 149px;
+}
+.morningBreakfast p, .lunch p, .eveBreakfast p, .dinner p {
+  padding-right: 161px;
+}
+}
 /* /Sleep Page Style/ */
 .sleepTrackerMainContainerInfo {
   padding-left: 62px;
