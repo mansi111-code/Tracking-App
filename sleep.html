@@ -17,7 +17,7 @@
         <nav>
             <div class="navContainer">
                 <div class="aiWhatsapp">
-                    <img src="images/aiWhatsapp.png" width="28" height="28" />
+                    <img src="images/aiWhatsapp.png" />
                     <p>AiWhatsApp</p>
                 </div>
                 <div class="leftSideOfHeader">
@@ -35,7 +35,7 @@
                     </div>
                     <div class="andyPeter">
                         <div class="peterImg">
-                            <img src="images/peter.png" alt="" width="45px" height="43px" />
+                            <img src="images/peter.png" alt="" />
                         </div>
                         <div class="peterAccount">
                             <span>Andy peter</span>
@@ -103,13 +103,14 @@
                         </div>
                     </div>
                     <div class="weekWholeData">
-                        <div class="Pie-Chart-Data-Container d-flex">
+                        <div class="piechartWithPairs">
+                         <div class="Pie-Chart-Data-Container d-flex">
                             <div class="Pie-Chart-Container">
                                 <div class="chart-container">
                                     <canvas id="chart-sunday" class="my-chart"></canvas>
                                 </div>
                                 <p>Sn</p>
-                            </div>
+                            </div></div>
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
                                     <div class="chart-container">
@@ -117,7 +118,8 @@
                                     </div>
                                     <p>Mn</p>
                                 </div>
-                            </div>
+                            </div></div>
+                        <div class="piechartWithPairs">
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
                                     <div class="chart-container">
@@ -133,7 +135,8 @@
                                     </div>
                                     <p>Wd</p>
                                 </div>
-                            </div>
+                            </div></div>
+                        <div class="piechartWithPairs">
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
                                     <div class="chart-container">
@@ -149,7 +152,7 @@
                                     </div>
                                     <p>Fr</p>
                                 </div>
-                            </div>
+                            </div></div>
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
                                     <div class="chart-container">
@@ -167,6 +170,7 @@
                     <div class="lastSleepInfo">
                         <p><u> Last Sleep Information</u></p>
                         <div class="sleepToWakeupInfo">
+                            <div class="sleepAndWakeupTime">
                             <div class="sleepTime">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -190,7 +194,8 @@
                                     <p>07:12 AM</p>
                                     <span>Wake up time</span>
                                 </div>
-                            </div>
+                            </div></div>
+                            <div class="bedAndAsleep">
                             <div class="wentToBad">
                                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +223,7 @@
                                     <span>fall asleep</span>
                                 </div>
                             </div>
-                        </div>
+                        </div></div>
                     </div>
                     <div class="moreDetailsMainContainer">
                         <div class="moreDetailsinnerContainer">
@@ -227,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="monthlyOverview">
+            <!-- <div class="monthlyOverview">
                 <div class="monthlyOverviewDaysWeek">
                     <p id="monthlyOverviewPara">Monthly Overview</p>
                     <div class="weeksDaysContainers">
@@ -258,69 +263,69 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
-        const ctx = document.getElementById('sleepTrackerBarChart').getContext('2d');
-        const sleepTrackerBarChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
-                datasets: [{
-                    label: 'Sleep Percentage',
-                    data: [10, 20, 35, 25, 15, 40, 45, 30, 25, 35, 50, 20, 15, 35, 40, 30, 20, 45, 35, 30, 25, 50, 45, 30, 40, 35, 20, 25, 40, 45, 50],
-                    backgroundColor: 'rgba(124, 186, 34, 0.7)', // Greenish color
-                    borderColor: 'rgba(124, 186, 34, 1)',
-                    barThickness: 8.8, // Set the bar width to 8.8px
-                    borderRadius: {
-                        topLeft: 8, // Top left radius
-                        topRight: 8, // Top right radius
-                        bottomLeft: 0, // No radius at the bottom
-                        bottomRight: 0 // No radius at the bottom
-                    }
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 50, // End value
-                        title: {
-                            display: true,
-                        },
-                        ticks: {
-                            stepSize: 10, // Increment by 10
-                            callback: function (value) {
-                                return value + '%'; // Display percentages
-                            }
-                        },
-                        grid: {
-                            display: false // Hide y-axis grid lines
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                        },
-                        grid: {
-                            display: false // Hide x-axis grid lines
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (context) {
-                                return context.dataset.label + ': ' + context.raw + '%';
-                            }
-                        }
-                    }
-                }
-            }
-        });
+        // const ctx = document.getElementById('sleepTrackerBarChart').getContext('2d');
+        // const sleepTrackerBarChart = new Chart(ctx, {
+        //     type: 'bar',
+        //     data: {
+        //         labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
+        //         datasets: [{
+        //             label: 'Sleep Percentage',
+        //             data: [10, 20, 35, 25, 15, 40, 45, 30, 25, 35, 50, 20, 15, 35, 40, 30, 20, 45, 35, 30, 25, 50, 45, 30, 40, 35, 20, 25, 40, 45, 50],
+        //             backgroundColor: 'rgba(124, 186, 34, 0.7)', // Greenish color
+        //             borderColor: 'rgba(124, 186, 34, 1)',
+        //             barThickness: 8.8, // Set the bar width to 8.8px
+        //             borderRadius: {
+        //                 topLeft: 8, // Top left radius
+        //                 topRight: 8, // Top right radius
+        //                 bottomLeft: 0, // No radius at the bottom
+        //                 bottomRight: 0 // No radius at the bottom
+        //             }
+        //         }]
+        //     },
+        //     options: {
+        //         scales: {
+        //             y: {
+        //                 beginAtZero: true,
+        //                 max: 50, // End value
+        //                 title: {
+        //                     display: true,
+        //                 },
+        //                 ticks: {
+        //                     stepSize: 10, // Increment by 10
+        //                     callback: function (value) {
+        //                         return value + '%'; // Display percentages
+        //                     }
+        //                 },
+        //                 grid: {
+        //                     display: false // Hide y-axis grid lines
+        //                 }
+        //             },
+        //             x: {
+        //                 title: {
+        //                     display: true,
+        //                 },
+        //                 grid: {
+        //                     display: false // Hide x-axis grid lines
+        //                 }
+        //             }
+        //         },
+        //         plugins: {
+        //             legend: {
+        //                 display: false
+        //             },
+        //             tooltip: {
+        //                 callbacks: {
+        //                     label: function (context) {
+        //                         return context.dataset.label + ': ' + context.raw + '%';
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // });
         const sleepData = {
             sunday: [7, 17],
             monday: [6, 18],

@@ -23,6 +23,10 @@ a {
   align-items: center;
   gap: 9px;
 }
+.aiWhatsapp img{
+  width: 28px;
+  height: 28px;
+}
 .premium {
   border-radius: 100px;
   padding: 2px;
@@ -273,7 +277,10 @@ a {
   align-items: center;
   border-radius: 100px;
 }
-
+.peterImg img{
+  width: 45px;
+  height: 43px;
+}
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -1802,7 +1809,7 @@ margin-bottom: 21px;
   margin-bottom: 0px;
 }
 /* index */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .sleep,
   .water,
   .weight,
@@ -1835,7 +1842,7 @@ margin-bottom: 21px;
   .dinner p {
     padding-right: 174px;
   }
-}
+} */
 @media (max-width: 1200px) {
   .informationForHealth img,
   .informationForFood img {
@@ -1872,19 +1879,17 @@ margin-bottom: 21px;
     padding-right: 161px;
   }
 }
-@media (max-width: 720px) {
 
-}
 @media(max-width:850px){
   .sleepTracker img {
     width: 497px;
-    height: 270px;
+    height: 240px;
   }
   .sleepTrackerBackgroundContainer p {
     margin-right: 374px;
   }
   .sleepTrackerBackgroundContainer {
-    height: 322px;
+    height: 292px;
     width: 516px;
   }
 }
@@ -1896,7 +1901,10 @@ margin-bottom: 21px;
     align-items: center;
     flex-direction: column;
   }
-
+  .navContainer{
+  padding-left: 49px;
+  padding-right: 56px;
+  }
 }
 @media (max-width: 720px) {
   .searchBar {
@@ -1906,4 +1914,166 @@ margin-bottom: 21px;
     padding-left: 21px;
     padding-right: 24px;
   }
+  .piechartWithPairs{
+display: flex;
+gap: 13rem;
+  }
+  .sleepToWakeupInfo{   
+      display: flex;
+      flex-direction: column;
+  }
+  .bedAndAsleep,.sleepAndWakeupTime{
+display: flex;
+gap: 9rem;
+  }
+  .averageSleepTime{
+    gap: 43px;
+  }
+  .weekWholeData{   
+      display: flex;
+      flex-direction: column;  
+  }
+
+  .sleepTrackerBackgroundContainer {
+    height: 215px;
+    width: 365px;
+}    .sleepTracker img {
+  width: 346px;
+  height: 161px;
+}.sleepTrackerBackgroundContainer p {
+  margin-right: 230px;
+}.dayAndMonthWithDateContainer {
+  gap: 29px;
+}.sleepingTimeWithHoursAndMinutes{
+  width: 5rem;
+} .averageSleepTime{ 
+  gap: 8rem;
 }
+.sleepTrackerMainContainerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sleepTrackerMainContainerInfo {
+  padding-left: 0px;
+}
+.sleepInfoMainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singleDayInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sleepAndWakeupTime,.bedAndAsleep{
+  gap: 6rem;
+  width: 218px;
+}
+.peterImg img{
+    width: 40px;
+    height: 38px;
+}
+.premiumTrail {
+  height: 24px;}
+  .premiumTrail p {
+    font-size: 8px;
+    padding: 10px;}
+    .peterAccount p {
+      font-size: 9px;}
+      .peterAccount span {
+        font-size: 10px;}
+        .aiWhatsapp p {
+          font-size: 15px;
+}.leftSideOfHeader {
+  gap: 1rem;
+}
+}
+
+@media(min-width:320px)and (max-width:425px){
+.averageSleepTime{  
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+}
+.dayAndMonthWithDateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+.sleepTracker img {
+  width: 296px;
+  height: 152px;
+}
+.sleepTrackerBackgroundContainer {
+  height: 203px;
+  width: 310px;
+}.sleepTrackerBackgroundContainer p {
+  margin-right: 174px;
+}
+.navContainer {
+  height: 45px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.aiWhatsapp{
+  gap: 4px;
+}
+.leftSideOfHeader{
+  gap: 5px;
+}
+.aiWhatsapp img{
+  width: 11px;
+  height: 11px;
+}
+.aiWhatsapp p {
+  font-size: 11px;
+}
+.leftSideOfHeader {
+  gap: 1rem;
+}
+.premiumTrail {
+  height: 20px;
+}
+.premiumTrail p {
+  font-size: 6px;
+  padding: 6px;
+}
+.setting svg{
+  width: 11px;
+  height: 11px;
+}
+.peterImg img {
+  width: 29px;
+  height: 30px;
+}
+.peterAccount p {
+  font-size: 8px;
+}
+.peterAccount span {
+  font-size: 8px;
+}
+.andyPeter{
+  gap: 4px;
+}
+.dayWithDate{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.averageSleepTime{
+  display: flex;
+  align-items: center;
+}
+.lastSleepInfo p{
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+}
+}
+
