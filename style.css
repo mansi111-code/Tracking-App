@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0%;
   margin: 0;
 }
+
 html {
   font-size: 62.3%;
 }
+
 .aiWhatsapp p {
   color: #45437f;
   font-weight: 500;
@@ -14,24 +17,29 @@ html {
   margin-bottom: 0px;
   font-family: "Inter", sans-serif;
 }
+
 a {
   text-decoration: none !important;
   color: inherit !important;
 }
+
 .aiWhatsapp {
   display: flex;
   align-items: center;
   gap: 9px;
 }
-.aiWhatsapp img{
+
+.aiWhatsapp img {
   width: 28px;
   height: 28px;
 }
+
 .premium {
   border-radius: 100px;
   padding: 2px;
   background: linear-gradient(to right, #feff02, #596c00);
 }
+
 .premiumTrail {
   background-color: white;
   height: 35px;
@@ -40,6 +48,7 @@ a {
   align-items: center;
   border-radius: 100px;
 }
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -50,6 +59,7 @@ a {
   height: 65px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
+
 .leftSideOfHeader {
   display: flex;
   gap: 2.4rem;
@@ -63,37 +73,44 @@ a {
   margin-bottom: 0px;
   font-family: "Poppins", sans-serif;
 }
+
 .peterAccount {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .peterAccount span {
   color: #000000;
   font-size: 12px;
   font-weight: 600;
 }
+
 .peterAccount p {
   font-size: 10px;
   font-weight: 300;
   margin-bottom: 0px;
 }
+
 .peterImg {
   background-color: pink;
   display: flex;
   justify-content: center;
   border-radius: 9px;
 }
+
 .andyPeter {
   display: flex;
   gap: 1rem;
 }
+
 .setting {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .searchBar {
   border: 1px solid #b9b9b9;
   border-radius: 20px;
@@ -108,11 +125,13 @@ a {
   gap: 16px;
   margin-left: 226px;
 }
+
 .searchClientInput {
   border: none;
   height: 50px;
   width: 100%;
 }
+
 .searchClientInput::placeholder,
 .searchClientInput {
   font-family: "Poppins";
@@ -122,10 +141,12 @@ a {
   text-align: left;
   color: rgba(82, 78, 78, 1);
 }
+
 .searchClientInput:focus {
   outline: none;
   border: none;
 }
+
 .sleep {
   width: 290px;
   height: 270px;
@@ -138,6 +159,7 @@ a {
   padding-top: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .weight {
   width: 290px;
   height: 270px;
@@ -150,6 +172,7 @@ a {
   padding-top: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .attendence {
   width: 290px;
   height: 270px;
@@ -162,6 +185,7 @@ a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .water {
   width: 290px;
   height: 270px;
@@ -174,6 +198,7 @@ a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .water p {
   padding-right: 212px;
   font-size: 14px;
@@ -181,6 +206,7 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
+
 .attendence p {
   padding-right: 170px;
   font-size: 14px;
@@ -188,6 +214,7 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
+
 .sleep p {
   padding-right: 220px;
   font-size: 14px;
@@ -195,6 +222,7 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
+
 .weight p {
   padding-right: 200px;
   font-size: 14px;
@@ -202,22 +230,29 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
+
 .informationForHealth,
 .informationForFood {
   gap: 2rem;
-  align-items: center;
-  flex-direction: column;
   display: flex;
+  justify-content: center;
 }
+
+.informationForHealth {
+  margin-top: 7rem;
+}
+
 .informationForFood {
   padding-top: 30px;
   padding-bottom: 100px;
 }
+
 .informationForHealth img,
 .informationForFood img {
   height: 204px;
   width: 250px;
 }
+
 .morningBreakfast,
 .lunch,
 .eveBreakfast,
@@ -233,6 +268,7 @@ a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .morningBreakfast p,
 .lunch p,
 .eveBreakfast p,
@@ -249,6 +285,7 @@ a {
 .sleepTrackerMainContainerInfo {
   padding-left: 62px;
 }
+
 .aiWhatsapp p {
   color: #45437f;
   font-weight: 500;
@@ -262,6 +299,7 @@ a {
   align-items: center;
   gap: 9px;
 }
+
 .premium {
   border-radius: 100px;
   padding: 2px;
@@ -276,10 +314,12 @@ a {
   align-items: center;
   border-radius: 100px;
 }
-.peterImg img{
+
+.peterImg img {
   width: 45px;
   height: 43px;
 }
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -341,10 +381,12 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .sleepInfoMainContainer {
   margin-top: 39px;
   font-family: "Poppins", sans-serif;
 }
+
 .sleepTrackerBackgroundContainer {
   height: 379px;
   width: 729px;
@@ -357,6 +399,7 @@ a {
   align-items: center;
   margin-top: 42px;
 }
+
 .sleepTrackerBackgroundContainer p {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
@@ -364,8 +407,8 @@ a {
   font-size: 17px;
   margin-bottom: 0px;
   margin-right: 573px;
-  /* margin-top: 12px; */
 }
+
 .selectorBorder {
   border-radius: 100px;
   padding: 2px;
@@ -376,14 +419,17 @@ a {
   align-items: center;
   height: 36px;
 }
+
 .sleepTracker img {
   width: 700px;
   height: 300px;
 }
+
 .sleepTracker {
   display: flex;
   justify-content: center;
 }
+
 .selector {
   width: 108px;
   background-color: white;
@@ -393,28 +439,34 @@ a {
   align-items: center;
   border-radius: 100px;
 }
+
 .selector span {
   display: flex;
 }
+
 .singleDayInfo span {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
 }
+
 .singleDayInfo p {
   color: #3e4043;
   font-size: 12px;
   font-weight: 400;
 }
+
 .averageSleepTime {
   display: flex;
   gap: 198px;
 }
+
 .averageSleepTime {
   font-weight: 500;
   font-size: 12px;
 }
+
 .sleepToWakeupInfo {
   display: flex;
   justify-content: space-between;
@@ -422,26 +474,34 @@ a {
   margin-top: 33px;
   width: 30%;
 }
+
 .lastSleepInfo {
   margin-top: 18px;
 }
-.bedAndAsleep,.sleepAndWakeupTime{
+
+.bedAndAsleep,
+.sleepAndWakeupTime {
   display: flex;
   gap: 4rem;
 }
+
 .lastSleepInfo p {
   font-weight: 500;
   font-size: 12px;
 }
-.weekWholeData,.piechartWithPairs{
-    display: flex;
-    gap: 2rem;
+
+.weekWholeData,
+.piechartWithPairs {
+  display: flex;
+  gap: 2rem;
 }
+
 .dayAndMonthWithDateContainer {
   display: flex;
   margin-bottom: 15px;
   gap: 79px;
 }
+
 .nav-link {
   display: flex !important;
   justify-content: center !important;
@@ -450,9 +510,11 @@ a {
   font-size: 13px !important;
   font-weight: 500 !important;
 }
+
 .nav-link p {
   margin-bottom: 0px;
 }
+
 .sleepingTimeWithHoursAndMinutes p,
 .wakeUpTimeInMinutes p,
 .wentToBadWithHoursAndMinutes p,
@@ -462,6 +524,7 @@ a {
   font-weight: 500;
   font-size: 13px;
 }
+
 .sleepingTimeWithHoursAndMinutes span,
 .wakeUpTimeInMinutes span,
 .wentToBadWithHoursAndMinutes span,
@@ -470,6 +533,7 @@ a {
   font-weight: 400;
   font-size: 9px;
 }
+
 .sleepTime,
 .wakeupTime,
 .wentToBad,
@@ -480,6 +544,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .moreDetailsMainContainer {
   width: 204px;
   margin-top: 40px;
@@ -499,41 +564,46 @@ a {
   font-weight: 500;
   font-size: 13px;
 }
+
 .moreDetailsinnerContainer p {
   margin-bottom: 0px;
 }
-/* .my-chart {
-  width: 55px !important;
-  height: 55px !important;
-} */
+
 .Pie-Chart-data-Container {
   margin-bottom: 5px;
 }
+
 .Pie-Chart-Container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .chart-container {
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
 }
+
 .Pie-Chart-data-Container {
   margin-left: -20px;
 }
+
 .Pie-Chart-Data-Container {
   gap: 2rem;
 }
+
 .weekWholeData {
   margin-bottom: 4px;
 }
+
 .daysWeekMonthContainer {
   display: flex;
   gap: 13px;
 }
+
 .monthlyOverview {
   height: 361px;
   width: 723px;
@@ -542,6 +612,7 @@ a {
   margin-top: 54px;
   margin-bottom: 59px;
 }
+
 #monthlyOverviewPara {
   color: #091b35;
   font-family: "Poppins", sans-serif;
@@ -549,21 +620,18 @@ a {
   font-weight: 600;
   display: flex;
 }
+
 .monthlyOverviewDaysWeek {
   padding: 31px;
   display: flex;
   gap: 33rem;
-}
-@media (max-width: 1200px) {
-  .sleepToWakeupInfo {
-    width: 61%;
-  }
 }
 
 /* /Water Page/ */
 .waterTrackerMainContainerInfo {
   padding-left: 62px;
 }
+
 .aiWhatsapp p {
   color: #45437f;
   font-weight: 500;
@@ -654,6 +722,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .waterInfoMainContainer {
   margin-top: 39px;
   font-family: "Poppins", sans-serif;
@@ -671,6 +740,7 @@ a {
   align-items: center;
   margin-top: 42px;
 }
+
 .waterTrackerBackgroundContainer p {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
@@ -679,12 +749,14 @@ a {
   margin-bottom: 0px;
   margin-right: 573px;
 }
+
 .waterTracker img {
   /* width: 97%;
   height: auto; */
   width: 700px;
   height: 300px;
 }
+
 .waterTracker {
   display: flex;
   justify-content: center;
@@ -700,6 +772,7 @@ a {
   align-items: center;
   height: 39px;
 }
+
 .selector span {
   display: flex;
 }
@@ -713,33 +786,39 @@ a {
   align-items: center;
   border-radius: 100px;
 }
+
 .singleDayInfo span {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
 }
+
 .singleDayInfo p {
   color: #3e4043;
   font-size: 12px;
   font-weight: 500;
 }
+
 .averagewaterIntakePerDay {
   display: flex;
   gap: 198px;
   font-weight: 500;
   font-size: 12px;
 }
+
 .waterInvokeTodayInfo {
   font-weight: 500;
   font-size: 12px;
   margin-top: 5px;
 }
+
 .dayAndMonthWithDateContainer {
   display: flex;
   margin-bottom: 15px;
   gap: 79px;
 }
+
 .nav-link {
   display: flex !important;
   justify-content: center !important;
@@ -748,9 +827,11 @@ a {
   font-size: 13px !important;
   font-weight: 500 !important;
 }
+
 .nav-link p {
   margin-bottom: 0px;
 }
+
 .waterInMlContainerOne,
 .waterInMlContainerTwo,
 .waterInMlContainerThree,
@@ -763,6 +844,7 @@ a {
   align-items: center;
   gap: 12px;
 }
+
 .waterMLWithTimeContainerSeven p,
 .waterMLWithTimeContainerSix p,
 .waterMLWithTimeContainerFive p,
@@ -776,6 +858,7 @@ a {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+
 .waterMLWithTimeContainerSix span,
 .waterMLWithTimeContainerFive span,
 .waterMLWithTimeContainerFour span,
@@ -787,6 +870,7 @@ a {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
+
 .moreDetailsMainContainer {
   width: 204px;
   margin-top: 40px;
@@ -806,34 +890,37 @@ a {
   font-weight: 500;
   font-size: 13px;
 }
+
 .moreDetailsinnerContainer p {
   margin-bottom: 0px;
 }
-/* .my-chart {
-  width: 55px !important;
-  height: 55px !important;
-} */
+
 .Pie-Chart-Container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .chart-container {
   width: 100px;
   display: flex;
   justify-content: center;
 }
+
 .Pie-Chart-data-Container {
   margin-left: -20px;
 }
+
 .weekWholeData {
   margin-bottom: 4px;
 }
+
 .daysWeekMonthContainer {
   display: flex;
   gap: 13px;
 }
+
 .monthlyOverview {
   height: 361px;
   width: 723px;
@@ -842,6 +929,7 @@ a {
   margin-top: 54px;
   margin-bottom: 59px;
 }
+
 #monthlyOverviewPara {
   color: #091b35;
   font-family: "Poppins", sans-serif;
@@ -849,11 +937,13 @@ a {
   font-weight: 600;
   display: flex;
 }
+
 .monthlyOverviewDaysWeek {
   padding: 31px;
   display: flex;
   gap: 33rem;
 }
+
 .weekBorder,
 .daysBorder {
   border-radius: 100px;
@@ -876,14 +966,17 @@ a {
   align-items: center;
   border-radius: 100px;
 }
+
 .weeksDaysContainers {
   display: flex;
   gap: 2rem;
 }
+
 .waterAllContainersInMLWithTime {
   display: flex;
   gap: 20px;
 }
+
 /* /Attendance Page/ */
 .attendanceTrackerMainContainer {
   background-color: #fafafb;
@@ -1005,16 +1098,19 @@ a {
   margin-right: 525px;
   margin-top: 12px;
 }
+
 .attendanceTracker img {
   /* width: 97%;
   height: auto; */
   width: 700px;
   height: 300px;
 }
+
 .attendanceTracker {
   display: flex;
   justify-content: center;
 }
+
 .monthlyOverview p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1142,6 +1238,7 @@ th {
   background-color: #d3d3d3;
   color: #233255cc;
 }
+
 tbody tr {
   text-align: center;
 }
@@ -1149,7 +1246,6 @@ tbody tr {
 .studentAttendance {
   background-color: white;
   width: 48%;
-  /* height: 608px; */
   margin-left: 62px;
   border: 2px solid #909090;
   border-radius: 7px;
@@ -1206,6 +1302,7 @@ tbody {
 .studentInfo {
   margin-bottom: 8px;
 }
+
 .editButton,
 .deleteButton {
   color: #233255b2;
@@ -1216,19 +1313,24 @@ tbody {
   border-radius: 8px;
   padding: 10px 35px 10px 35px;
 }
+
 .editButton {
   margin-right: 6rem;
 }
+
 .header-content {
   text-align: center;
   border-right: 1px solid #0000001a;
   line-height: 0.5;
 }
+
 .header-contentStatus {
   text-align: center;
 }
+
 /* /Weight page/ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0%;
   margin: 0;
@@ -1237,9 +1339,11 @@ tbody {
 html {
   font-size: 62.3%;
 }
+
 .weightTrackerMainContainerInfo {
   padding-left: 62px;
 }
+
 .aiWhatsapp p {
   color: #45437f;
   font-weight: 500;
@@ -1330,16 +1434,17 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .weightInfoMainContainer {
   margin-top: 39px;
   font-family: "Poppins", sans-serif;
 }
+
 .weightTracker img {
-  /* width: 97%;
-  height: auto; */
   width: 700px;
   height: 300px;
 }
+
 .weightTracker {
   display: flex;
   justify-content: center;
@@ -1357,6 +1462,7 @@ html {
   align-items: center;
   margin-top: 42px;
 }
+
 .weightTrackerBackgroundContainer p {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
@@ -1365,6 +1471,7 @@ html {
   margin-bottom: 0px;
   margin-right: 573px;
 }
+
 .monthlyOverview {
   height: 361px;
   width: 723px;
@@ -1379,31 +1486,33 @@ html {
   display: flex;
   gap: 33rem;
 }
+
 .singleDayInfo span {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
 }
+
 .singleDayInfo p {
   color: #3e4043;
   font-size: 12px;
   font-weight: 500;
 }
-/* .singleDayInfo p {
-margin-bottom: 21px;
-} */
+
 .averageWeightIncreasePerDay {
   display: flex;
   gap: 198px;
   font-weight: 500;
   font-size: 12px;
 }
+
 .dayAndMonthWithDateContainer {
   display: flex;
   margin-bottom: 15px;
   gap: 79px;
 }
+
 .nav-link {
   display: flex !important;
   justify-content: center !important;
@@ -1412,6 +1521,7 @@ margin-bottom: 21px;
   font-size: 13px !important;
   font-weight: 500 !important;
 }
+
 .nav-link p {
   margin-bottom: 0px;
 }
@@ -1435,38 +1545,42 @@ margin-bottom: 21px;
   font-weight: 500;
   font-size: 13px;
 }
+
 .moreDetailsinnerContainer p {
   margin-bottom: 0px;
 }
-/* .my-chart {
-  width: 55px !important;
-  height: 55px !important;
-} */
+
 .Pie-Chart-Container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .chart-container {
   width: 60px;
   display: flex;
   justify-content: center;
   height: 60px;
 }
+
 .Pie-Chart-data-Container {
   margin-left: -20px;
 }
+
 .weekWholeData {
   margin-bottom: 4px;
 }
+
 .daysWeekMonthContainer {
   display: flex;
   gap: 13px;
 }
+
 .Pie-Chart-Data-Container {
   gap: 2rem !important;
 }
+
 .monthlyOverview {
   height: 361px;
   width: 723px;
@@ -1482,6 +1596,7 @@ margin-bottom: 21px;
   gap: 33rem;
   justify-content: space-between;
 }
+
 .selectorBorder {
   border-radius: 100px;
   padding: 2px;
@@ -1492,6 +1607,7 @@ margin-bottom: 21px;
   align-items: center;
   height: 36px;
 }
+
 .selector {
   width: 108px;
   background-color: white;
@@ -1501,9 +1617,11 @@ margin-bottom: 21px;
   align-items: center;
   border-radius: 100px;
 }
+
 .selector span {
   display: flex;
 }
+
 #monthlyOverviewPara {
   color: #091b35;
   font-family: "Poppins", sans-serif;
@@ -1511,6 +1629,7 @@ margin-bottom: 21px;
   font-weight: 600;
   display: flex;
 }
+
 /* /Food Tracker/ */
 .mealTrackerMainContainer {
   background-color: #fafafb;
@@ -1630,22 +1749,24 @@ margin-bottom: 21px;
   margin-bottom: 0px;
   margin-right: 587px;
 }
+
 .mealTracker {
   display: flex;
   justify-content: center;
 }
+
 .mealTracker img {
-  /* width: 97%;
-  height: auto; */
   width: 700px;
   height: 300px;
 }
+
 .allAboutMeal h5 {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
+
 .allAboutMeal p {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
@@ -1653,6 +1774,7 @@ margin-bottom: 21px;
   color: #3e4043;
   width: 50%;
 }
+
 .outerDivDays {
   width: 92px;
   border-radius: 100px;
@@ -1675,42 +1797,50 @@ margin-bottom: 21px;
   margin-top: 20px;
   gap: 1rem;
 }
+
 #todayDay {
   color: #3e4043;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
 }
+
 .dayAndMealInnerContainer {
   display: flex;
   align-items: center;
   gap: 20rem;
 }
+
 .onlyWeekAndDayContainer {
   display: flex;
   gap: 2rem;
 }
+
 .allTheDataOfMeal {
   margin-top: 26px;
 }
+
 .nav-item {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 0px;
   padding-left: 0px;
 }
+
 .eatingToday P {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #3e4043;
 }
+
 .foodVariety {
   padding-bottom: 2rem;
   padding-top: 58px;
   display: flex;
   gap: 2rem;
 }
+
 .steakContainer,
 .vegFoodContainer,
 .mealContainer {
@@ -1720,8 +1850,8 @@ margin-bottom: 21px;
   background-color: #fafafa;
   border-radius: 15px;
   box-shadow: 19px 6px 10px #aeaec066;
-  /* box-shadow: 0px 4px 10px #AEAEC066; */
 }
+
 .steakContainer p,
 .vegFoodContainer p,
 .mealContainer p {
@@ -1729,6 +1859,7 @@ margin-bottom: 21px;
   font-weight: 500;
   margin-bottom: 0px;
 }
+
 .steakContainer span,
 .vegFoodContainer span,
 .mealContainer span {
@@ -1736,26 +1867,32 @@ margin-bottom: 21px;
   font-weight: 400;
   color: #a5a5a5;
 }
+
 .steakContainer img {
   margin-top: -42px;
   margin-left: 11px;
 }
+
 .vegFoodContainer img {
   margin-top: -53px;
   margin-left: 3px;
 }
+
 .mealContainer img {
   margin-top: -47px;
   margin-left: 11px;
 }
+
 .steakAndIngredients,
 .vegAndIngredients,
 .mealAndIngredients {
   margin-left: 11px;
 }
+
 .mealAndIngredients {
   margin-top: 14px;
 }
+
 .moreDetailsMainContainer {
   width: 204px;
   margin-top: 40px;
@@ -1763,6 +1900,7 @@ margin-bottom: 21px;
   padding: 2px;
   background: linear-gradient(to right, #feff02, #596c00);
 }
+
 .moreDetailsinnerContainer {
   background-color: white;
   height: 35px;
@@ -1774,14 +1912,17 @@ margin-bottom: 21px;
   font-weight: 500;
   font-size: 13px;
 }
+
 .moreDetailsinnerContainer p {
   margin-bottom: 0px;
 }
+
 .monthlyOverviewDaysWeekMealContainer {
   display: flex;
   gap: 71rem;
   margin-top: 44px;
 }
+
 .selectorBorder {
   border-radius: 100px;
   padding: 2px;
@@ -1792,6 +1933,7 @@ margin-bottom: 21px;
   align-items: center;
   height: 36px;
 }
+
 .selector {
   width: 108px;
   background-color: white;
@@ -1801,9 +1943,11 @@ margin-bottom: 21px;
   align-items: center;
   border-radius: 100px;
 }
+
 .selector span {
   display: flex;
 }
+
 .nav-link {
   display: flex !important;
   justify-content: center !important;
@@ -1812,50 +1956,23 @@ margin-bottom: 21px;
   font-size: 13px !important;
   font-weight: 500 !important;
 }
+
 .nav-link p {
   margin-bottom: 0px;
 }
+.allWatersAndMls {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 /* index */
-/* @media (max-width: 1200px) {
-  .sleep,
-  .water,
-  .weight,
-  .attendence {
-    width: 250px;
-    height: 260px;
-  }
-  .morningBreakfast,
-  .eveBreakfast,
-  .lunch,
-  .dinner {
-    width: 250px;
-    height: 260px;
-  }
-  .sleep p {
-    padding-right: 190px;
-  }
-  .water p {
-    padding-right: 186px;
-  }
-  .attendence p {
-    padding-right: 142px;
-  }
-  .weight p {
-    padding-right: 175px;
-  }
-  .morningBreakfast p,
-  .lunch p,
-  .eveBreakfast p,
-  .dinner p {
-    padding-right: 174px;
-  }
-} */
 @media (max-width: 1200px) {
   .informationForHealth img,
   .informationForFood img {
     height: 159px;
     width: 203px;
   }
+
   .sleep,
   .water,
   .attendence,
@@ -1867,18 +1984,23 @@ margin-bottom: 21px;
     width: 232px;
     height: 222px;
   }
+
   .sleep p {
     padding-right: 167px;
   }
+
   .water p {
     padding-right: 160px;
   }
+
   .attendence p {
     padding-right: 122px;
   }
+
   .weight p {
     padding-right: 149px;
   }
+
   .morningBreakfast p,
   .lunch p,
   .eveBreakfast p,
@@ -1887,19 +2009,22 @@ margin-bottom: 21px;
   }
 }
 
-@media(max-width:850px){
+@media (max-width: 850px) {
   .sleepTracker img {
     width: 497px;
     height: 240px;
   }
+
   .sleepTrackerBackgroundContainer p {
     margin-right: 374px;
   }
+
   .sleepTrackerBackgroundContainer {
     height: 292px;
     width: 516px;
   }
 }
+
 @media (max-width: 768px) {
   .informationForHealth,
   .informationForFood {
@@ -1908,179 +2033,325 @@ margin-bottom: 21px;
     align-items: center;
     flex-direction: column;
   }
-  .navContainer{
-  padding-left: 49px;
-  padding-right: 56px;
-  }
-}
-@media (max-width: 720px) {
+
   .searchBar {
     margin-left: 60px;
   }
+
   .navContainer {
     padding-left: 21px;
     padding-right: 24px;
   }
-  .piechartWithPairs{
-display: flex;
-gap: 13rem;
+
+  .piechartWithPairs {
+    display: flex;
+    gap: 13rem;
   }
-  .sleepToWakeupInfo{   
-      display: flex;
-      flex-direction: column;
+
+  .sleepToWakeupInfo {
+    display: flex;
+    flex-direction: column;
   }
-  .bedAndAsleep,.sleepAndWakeupTime{
-display: flex;
-gap: 9rem;
+
+  .bedAndAsleep,
+  .sleepAndWakeupTime {
+    display: flex;
+    gap: 9rem;
   }
-  .averageSleepTime{
+
+  .averageSleepTime {
     gap: 43px;
   }
-  .weekWholeData{   
-      display: flex;
-      flex-direction: column;  
+
+  .weekWholeData {
+    display: flex;
+    flex-direction: column;
   }
 
   .sleepTrackerBackgroundContainer {
     height: 215px;
     width: 365px;
-}    .sleepTracker img {
-  width: 346px;
-  height: 161px;
-}.sleepTrackerBackgroundContainer p {
-  margin-right: 230px;
-}.dayAndMonthWithDateContainer {
-  gap: 29px;
-}.sleepingTimeWithHoursAndMinutes{
-  width: 5rem;
-} .averageSleepTime{ 
-  gap: 8rem;
-}
-.sleepTrackerMainContainerInfo{
+  }
+
+  .sleepTracker img {
+    width: 346px;
+    height: 161px;
+  }
+
+  .sleepTrackerBackgroundContainer p {
+    margin-right: 230px;
+  }
+
+  .dayAndMonthWithDateContainer {
+    gap: 29px;
+  }
+
+  .sleepingTimeWithHoursAndMinutes {
+    width: 5rem;
+  }
+
+  .averageSleepTime {
+    gap: 8rem;
+  }
+  .sleepTrackerMainContainerInfo,
+  .waterTrackerMainContainerInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.sleepTrackerMainContainerInfo {
-  padding-left: 0px;
-}
-.sleepInfoMainContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.singleDayInfo{
+    padding-left: 0px;
+  }
+
+  .sleepInfoMainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.sleepAndWakeupTime,.bedAndAsleep{
-  gap: 6rem;
-  width: 218px;
-}
-.peterImg img{
+  }
+
+  .singleDayInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sleepAndWakeupTime,
+  .bedAndAsleep {
+    gap: 6rem;
+    width: 218px;
+  }
+
+  .peterImg img {
     width: 40px;
     height: 38px;
-}
-.premiumTrail {
-  height: 24px;}
+  }
+
+  .premiumTrail {
+    height: 24px;
+  }
+
   .premiumTrail p {
     font-size: 8px;
-    padding: 10px;}
-    .peterAccount p {
-      font-size: 9px;}
-      .peterAccount span {
-        font-size: 10px;}
-        .aiWhatsapp p {
-          font-size: 15px;
-}.leftSideOfHeader {
-  gap: 1rem;
-}
+    padding: 10px;
+  }
+
+  .peterAccount p {
+    font-size: 9px;
+  }
+
+  .peterAccount span {
+    font-size: 10px;
+  }
+
+  .aiWhatsapp p {
+    font-size: 15px;
+  }
+
+  .leftSideOfHeader {
+    gap: 1rem;
+  }
+
+  .forSaturday {
+    justify-content: center;
+  }
+
+  /* water */
+
+  .waterAllContainersInMLWithTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .waterInvokeTodayInfo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .averagewaterIntakePerDay {
+    gap: 8rem;
+  }
+  .moreDetailsOuterContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .allWatersAndMls {
+    gap: 10rem;
+  }
 }
 
-@media(min-width:320px)and (max-width:425px){
-.averageSleepTime{  
+@media (min-width: 360px) and (max-width: 478px) {
+  .navContainer {
+    padding-left: 9px;
+    padding-right: 8px;
+  }
+
+  .aiWhatsapp {
+    gap: 4px;
+  }
+
+  .leftSideOfHeader {
+    gap: 5px;
+  }
+}
+
+/* water */
+@media (max-width: 845px) {
+  .waterTrackerBackgroundContainer {
+    height: 310px;
+    width: 627px;
+  }
+
+  .waterTracker img {
+    width: 601px;
+    height: 248px;
+  }
+
+  .waterTrackerBackgroundContainer p {
+    margin-right: 476px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .averageSleepTime {
     display: flex;
     gap: 0px;
     flex-direction: column;
-}
-.dayAndMonthWithDateContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 4rem;
+  }
+
+  .dayAndMonthWithDateContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
-}
-.sleepTracker img {
-  width: 296px;
-  height: 152px;
-}
-.sleepTrackerBackgroundContainer {
-  height: 203px;
-  width: 310px;
-}.sleepTrackerBackgroundContainer p {
-  margin-right: 174px;
-}
-.navContainer {
-  height: 45px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-.aiWhatsapp{
-  gap: 4px;
-}
-.leftSideOfHeader{
-  gap: 5px;
-}
-.aiWhatsapp img{
-  width: 11px;
-  height: 11px;
-}
-.aiWhatsapp p {
-  font-size: 11px;
-}
-.leftSideOfHeader {
-  gap: 1rem;
-}
-.premiumTrail {
-  height: 20px;
-}
-.premiumTrail p {
-  font-size: 6px;
-  padding: 6px;
-}
-.setting svg{
-  width: 11px;
-  height: 11px;
-}
-.peterImg img {
-  width: 29px;
-  height: 30px;
-}
-.peterAccount p {
-  font-size: 8px;
-}
-.peterAccount span {
-  font-size: 8px;
-}
-.andyPeter{
-  gap: 4px;
-}
-.dayWithDate{ 
+  }
+
+  .sleepTracker img {
+    width: 296px;
+    height: 152px;
+  }
+
+  .sleepTrackerBackgroundContainer {
+    height: 203px;
+    width: 310px;
+  }
+
+  .sleepTrackerBackgroundContainer p {
+    margin-right: 174px;
+  }
+
+  .navContainer {
+    height: 45px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .aiWhatsapp {
+    gap: 4px;
+  }
+
+  .leftSideOfHeader {
+    gap: 5px;
+  }
+
+  .aiWhatsapp img {
+    width: 11px;
+    height: 11px;
+  }
+
+  .aiWhatsapp p {
+    font-size: 11px;
+  }
+
+  .leftSideOfHeader {
+    gap: 1rem;
+  }
+
+  .premiumTrail {
+    height: 20px;
+  }
+
+  .premiumTrail p {
+    font-size: 6px;
+    padding: 6px;
+  }
+
+  .setting svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .peterImg img {
+    width: 29px;
+    height: 30px;
+  }
+
+  .peterAccount p {
+    font-size: 8px;
+  }
+
+  .peterAccount span {
+    font-size: 8px;
+  }
+
+  .andyPeter {
+    gap: 4px;
+  }
+
+  .dayWithDate {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-}
-.averageSleepTime{
-  display: flex;
-  align-items: center;
-}
-.lastSleepInfo p{
-  display: flex;
-  align-items: center;
-  /* flex-direction: column; */
-}
+  .averageSleepTime {
+    display: flex;
+    align-items: center;
+  }
+
+  .lastSleepInfo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+
+  /* water */
+  .waterTrackerBackgroundContainer {
+    height: 203px !important;
+    width: 310px !important;
+  }
+
+  .waterTrackerBackgroundContainer p {
+    margin-right: 174px !important;
+  }
+
+  .waterTracker img {
+    width: 296px !important;
+    height: 152px !important;
+  }
+
+  .averagewaterIntakePerDay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
 }
 
+/* water */
+@media (min-width: 424px) and (max-width: 717px) {
+  .waterTracker img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .waterTrackerBackgroundContainer {
+    width: 421px;
+    height: 245px;
+  }
+
+  .waterTrackerBackgroundContainer p {
+    margin-right: 274px;
+  }
+}
