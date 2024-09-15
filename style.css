@@ -262,7 +262,6 @@ a {
   align-items: center;
   gap: 9px;
 }
-
 .premium {
   border-radius: 100px;
   padding: 2px;
@@ -419,16 +418,24 @@ a {
 .sleepToWakeupInfo {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  /* gap: 2rem; */
   margin-top: 33px;
-  width: 43%;
+  width: 30%;
 }
 .lastSleepInfo {
   margin-top: 18px;
 }
+.bedAndAsleep,.sleepAndWakeupTime{
+  display: flex;
+  gap: 4rem;
+}
 .lastSleepInfo p {
   font-weight: 500;
   font-size: 12px;
+}
+.weekWholeData,.piechartWithPairs{
+    display: flex;
+    gap: 2rem;
 }
 .dayAndMonthWithDateContainer {
   display: flex;
