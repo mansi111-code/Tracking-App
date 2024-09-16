@@ -1085,7 +1085,7 @@ a {
   border: 2px solid #909090;
   border-radius: 7px;
   align-items: center;
-  margin-top: 42px;
+  padding-top: 42px;
   margin-bottom: 40px;
 }
 
@@ -1631,8 +1631,12 @@ html {
 }
 
 /* /Food Tracker/ */
-.mealTrackerMainContainer {
+.mainContainer{
   background-color: #fafafb;
+
+}
+.mealTrackerMainContainer {
+  /* background-color: #fafafb; */
   padding-top: 8px;
   padding-left: 62px;
 }
