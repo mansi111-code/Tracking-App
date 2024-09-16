@@ -2010,16 +2010,16 @@ html {
 }
 
 @media (max-width: 850px) {
-  .sleepTracker img {
+  .sleepTracker img ,.weightTracker img{
     width: 497px;
     height: 240px;
   }
 
-  .sleepTrackerBackgroundContainer p {
-    margin-right: 374px;
+  .sleepTrackerBackgroundContainer p,.weightTrackerBackgroundContainer p {
+    margin-right: 360px;
   }
 
-  .sleepTrackerBackgroundContainer {
+  .sleepTrackerBackgroundContainer ,.weightTrackerBackgroundContainer{
     height: 292px;
     width: 516px;
   }
@@ -2176,8 +2176,31 @@ html {
   .allWatersAndMls {
     gap: 10rem;
   }
-}
 
+/* weight */
+.weightTrackerMainContainerInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+}
+.averageWeightIncreasePerDay {
+  gap: 77px;}
+}
+/* weight */
+@media (min-width: 424px) and (max-width: 600px) {
+.weightTrackerBackgroundContainer{
+  width: 424px;
+  height: 274px;
+}
+.weightTracker img{
+  width: 400px;
+  height: 220px;
+}
+.weightTrackerBackgroundContainer p{
+  margin-right: 257px;
+}
+}
 @media (min-width: 360px) and (max-width: 478px) {
   .navContainer {
     padding-left: 9px;
@@ -2226,17 +2249,17 @@ html {
     align-items: center;
   }
 
-  .sleepTracker img {
+  .sleepTracker img ,.weightTracker img{
     width: 296px;
     height: 152px;
   }
 
-  .sleepTrackerBackgroundContainer {
+  .sleepTrackerBackgroundContainer,.weightTrackerBackgroundContainer {
     height: 203px;
     width: 310px;
   }
 
-  .sleepTrackerBackgroundContainer p {
+  .sleepTrackerBackgroundContainer p ,.weightTrackerBackgroundContainer p{
     margin-right: 174px;
   }
 

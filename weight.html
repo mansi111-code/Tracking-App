@@ -102,12 +102,14 @@
                         </div>
                     </div>
                     <div class="weekWholeData">
-                        <div class="Pie-Chart-Data-Container d-flex">
-                            <div class="Pie-Chart-Container">
-                                <div class="chart-container">
-                                    <canvas id="chart-sunday" class="my-chart"></canvas>
+                        <div class="piechartWithPairs">
+                            <div class="Pie-Chart-Data-Container d-flex">
+                                <div class="Pie-Chart-Container">
+                                    <div class="chart-container">
+                                        <canvas id="chart-sunday" class="my-chart"></canvas>
+                                    </div>
+                                    <p>Sn</p>
                                 </div>
-                                <p>Sn</p>
                             </div>
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
@@ -117,6 +119,8 @@
                                     <p>Mn</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="piechartWithPairs">
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
                                     <div class="chart-container">
@@ -133,6 +137,8 @@
                                     <p>Wd</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="piechartWithPairs">
                             <div class="Pie-Chart-Data-Container d-flex">
                                 <div class="Pie-Chart-Container">
                                     <div class="chart-container">
@@ -149,17 +155,17 @@
                                     <p>Fr</p>
                                 </div>
                             </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-saturday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>St</p>
+                        </div>
+                        <div class="forSaturday Pie-Chart-Data-Container d-flex">
+                            <div class="Pie-Chart-Container">
+                                <div class="chart-container">
+                                    <canvas id="chart-saturday" class="my-chart"></canvas>
                                 </div>
+                                <p>St</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div></div>
                 <div class="averageWeightIncreasePerDay">
                     <p>Average Weight Increase Per day</p>
                     <p>(2.1 KG) per day</p>
@@ -170,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="monthlyOverview">
+            <!-- <div class="monthlyOverview">
                 <div class="monthlyOverviewDaysWeek">
                     <p id="monthlyOverviewPara">Monthly Overview</p>
                     <div class="weeksDaysContainers">
@@ -194,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="chartContainer">
                     <canvas id="weightTrackerBarChart" width="600" height="200"></canvas>
                 </div>
@@ -203,67 +209,67 @@
     </div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
-        const ctx = document.getElementById('weightTrackerBarChart').getContext('2d');
-        const waterTrackerBarChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
-                datasets: [{
-                    label: 'Water Intake (Liters)',
-                    data: [2.5, 3, 1.8, 2.2, 2.6, 3.5, 2.8, 3.1, 2.7, 2.9, 3.4, 2, 1.8, 3, 3.2, 2.7, 2.5, 3.6, 2.8, 3, 2.5, 3.4, 3.1, 2.9, 3.2, 2.8, 2, 2.7, 3.3, 3.5, 3.7], // Water intake data
-                    backgroundColor: '#7CBA22', // Green color as per the design
-                    borderColor: '#7CBA22',
-                    barThickness: 8.8, // Adjust the thickness as per the design
-                    borderRadius: {
-                        topLeft: 8, // Rounded corners on top
-                        topRight: 8,
-                        bottomLeft: 0,
-                        bottomRight: 0
-                    }
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 6, // Max liters as shown in the design
-                        title: {
-                            display: true,
-                        },
-                        ticks: {
-                            stepSize: 1, // Increment by 1 liter
-                            callback: function (value) {
-                                return value + 'L'; // Display liters
-                            }
-                        },
-                        grid: {
-                            display: false,
-                            color: '#E0E0E0' // Light grey grid lines for better visibility
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                        },
-                        grid: {
-                            display: false // Hide x-axis grid lines for a clean look
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (context) {
-                                return context.dataset.label + ': ' + context.raw + 'L';
-                            }
-                        }
-                    }
-                }
-            }
-        });
+        // const ctx = document.getElementById('weightTrackerBarChart').getContext('2d');
+        // const waterTrackerBarChart = new Chart(ctx, {
+        //     type: 'bar',
+        //     data: {
+        //         labels: Array.from({ length: 31 }, (_, i) => i + 1), 
+        //         datasets: [{
+        //             label: 'Water Intake (Liters)',
+        //             data: [2.5, 3, 1.8, 2.2, 2.6, 3.5, 2.8, 3.1, 2.7, 2.9, 3.4, 2, 1.8, 3, 3.2, 2.7, 2.5, 3.6, 2.8, 3, 2.5, 3.4, 3.1, 2.9, 3.2, 2.8, 2, 2.7, 3.3, 3.5, 3.7], // Water intake data
+        //             backgroundColor: '#7CBA22', 
+        //             borderColor: '#7CBA22',
+        //             barThickness: 8.8,
+        //             borderRadius: {
+        //                 topLeft: 8, 
+        //                 topRight: 8,
+        //                 bottomLeft: 0,
+        //                 bottomRight: 0
+        //             }
+        //         }]
+        //     },
+        //     options: {
+        //         scales: {
+        //             y: {
+        //                 beginAtZero: true,
+        //                 max: 6, 
+        //                 title: {
+        //                     display: true,
+        //                 },
+        //                 ticks: {
+        //                     stepSize: 1, 
+        //                     callback: function (value) {
+        //                         return value + 'L'; 
+        //                     }
+        //                 },
+        //                 grid: {
+        //                     display: false,
+        //                     color: '#E0E0E0' 
+        //                 }
+        //             },
+        //             x: {
+        //                 title: {
+        //                     display: true,
+        //                 },
+        //                 grid: {
+        //                     display: false 
+        //                 }
+        //             }
+        //         },
+        //         plugins: {
+        //             legend: {
+        //                 display: false
+        //             },
+        //             tooltip: {
+        //                 callbacks: {
+        //                     label: function (context) {
+        //                         return context.dataset.label + ': ' + context.raw + 'L';
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // });
     </script>
     
     <script>
