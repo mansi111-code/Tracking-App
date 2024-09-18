@@ -388,7 +388,7 @@ a {
 }
 
 .sleepTrackerBackgroundContainer {
-  height: 379px;
+  height: 362px;
   width: 729px;
   gap: 1rem;
   display: flex;
@@ -729,7 +729,7 @@ a {
 }
 
 .waterTrackerBackgroundContainer {
-  height: 379px;
+  height: 362px;
   width: 729px;
   gap: 1rem;
   display: flex;
@@ -1075,7 +1075,7 @@ a {
 
 .attendanceTrackerBackgroundContainer {
   margin-left: 55px;
-  height: 379px;
+  height: 374px;
   width: 729px;
   gap: 1rem;
   margin-left: 62px;
@@ -1085,7 +1085,7 @@ a {
   border: 2px solid #909090;
   border-radius: 7px;
   align-items: center;
-  padding-top: 42px;
+  /* padding-top: 42px; */
   margin-bottom: 40px;
 }
 
@@ -1451,7 +1451,7 @@ html {
 }
 
 .weightTrackerBackgroundContainer {
-  height: 379px;
+  height: 362px;
   width: 729px;
   gap: 1rem;
   display: flex;
