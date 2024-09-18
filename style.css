@@ -1844,7 +1844,10 @@ html {
   display: flex;
   gap: 2rem;
 }
-
+.foodContainers{
+  gap: 2rem;
+  display: flex;
+}
 .steakContainer,
 .vegFoodContainer,
 .mealContainer {
@@ -1969,6 +1972,22 @@ html {
   justify-content: center;
   gap: 2rem;
 }
+
+/* meal */
+@media (max-width: 1024px) {
+.foodContainers{
+  /* flex-direction: column; */
+  display: flex;
+  flex-direction: row;
+}
+.foodVariety{
+  gap: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
 /* index */
 @media (max-width: 1200px) {
   .informationForHealth img,
