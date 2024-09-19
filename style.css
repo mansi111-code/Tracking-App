@@ -2060,6 +2060,27 @@ display: flex;
   .dinner p {
     padding-right: 161px;
   }
+
+  /* ATTENDACNCE */
+  .attendanceTrackerBackgroundContainer{
+    margin-left: 0px;
+  }
+  .attendanceTrackerMainContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .studentSchema{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .studentAttendance{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .presentApsentAndAllDetails {
+    gap: 2rem;}
 }
 
 @media (max-width: 850px) {
@@ -2253,7 +2274,20 @@ display: flex;
   .mealTrackerBackgroundContainer p {
     margin-right: 329px;
   }
-}
+  /* ATTENDANCE */
+  .attendanceTrackerBackgroundContainer {
+    margin-left: 55px;
+    height: 259px;
+    width: 473px;
+  margin-left: 0px;
+  }
+    .attendanceTracker img {
+      width: 455px;
+      height: 189px;
+  }
+  .attendanceTrackerBackgroundContainer p {
+    margin-right: 269px;
+}}
 /* weight */
 @media (min-width: 424px) and (max-width: 600px) {
 .weightTrackerBackgroundContainer{
@@ -2299,6 +2333,21 @@ display: flex;
   .waterTrackerBackgroundContainer p {
     margin-right: 476px;
   }
+}
+@media (max-width: 478px) {
+  .attendanceTrackerBackgroundContainer {
+    margin-left: 55px;
+    height: 222px;
+    width: 364px;
+    margin-left: 0px;
+}
+  .attendanceTracker img {
+    width: 343px;
+    height: 160px;
+}
+  .attendanceTrackerBackgroundContainer p {
+    margin-right: 170px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -2491,5 +2540,39 @@ width: 100px;
 }
 .mealContainer img {
   margin-left: 3px;
+}
+}
+@media (max-width:425px)and (min-width: 320px){
+.studentDetails {
+  width: 299px;
+}
+.allColumnContainer {
+  margin-left: 0px;
+}
+.presentApsentAndAllDetails{
+  gap: 0px;
+}
+.attendanceTrackerBackgroundContainer p {
+  margin-top: 0px;
+  margin-right:119px;
+}
+.attendanceTracker img {
+  width: 298px;
+  height: 123px;
+}
+.attendanceTrackerBackgroundContainer {
+  /* margin-left: 55px; */
+  height: 174px;
+  width: 313px;
+  margin-left: 0px;
+}
+.presentApsentAndAllDetails {
+  gap: 11px;
+}
+.allColumnContainer {
+  margin-left: 0px;
+}
+.underlineToAll{
+  margin-left: 0px;
 }
 }
