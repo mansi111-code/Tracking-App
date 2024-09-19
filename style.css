@@ -2121,7 +2121,7 @@ display: flex;
     display: flex;
     gap: 13rem;
   }
-
+/* sleep */
   .sleepToWakeupInfo {
     display: flex;
     flex-direction: column;
@@ -2143,17 +2143,17 @@ display: flex;
   }
 
   .sleepTrackerBackgroundContainer {
-    height: 215px;
-    width: 365px;
+    height: 224px;
+    width: 405px;
   }
 
   .sleepTracker img {
-    width: 346px;
-    height: 161px;
+    width: 385px;
+    height: 171px;
   }
 
   .sleepTrackerBackgroundContainer p {
-    margin-right: 230px;
+    margin-right: 259px;
   }
 
   .dayAndMonthWithDateContainer {
