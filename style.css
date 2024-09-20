@@ -282,6 +282,10 @@ a {
 }
 
 /* /Sleep Page Style/ */
+/* #sleepTrackerBarChart{
+  width: 600px;
+  height: 600px;
+} */
 .sleepTrackerMainContainerInfo {
   padding-left: 62px;
 }
@@ -2104,6 +2108,13 @@ display: flex;
 }
 
 @media (max-width: 768px) {
+
+  .sleepTrackerBarChart {
+    display: block !important;
+    box-sizing: border-box !important;
+    height: 220px !important;
+    width: 440px !important;
+}
   .monthlyOverViewMainContainer{
     display: flex;
     justify-content: center;
