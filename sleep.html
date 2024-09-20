@@ -238,7 +238,8 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="monthlyOverview">
+        <div class="monthlyOverViewMainContainer">
+            <div class="monthlyOverview">
                 <div class="monthlyOverviewDaysWeek">
                     <p id="monthlyOverviewPara">Monthly Overview</p>
                     <div class="weeksDaysContainers">
@@ -269,146 +270,147 @@
                 </div>
             </div>
         </div>
-    </div> -->
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script>
-            // const ctx = document.getElementById('sleepTrackerBarChart').getContext('2d');
-            // const sleepTrackerBarChart = new Chart(ctx, {
-            //     type: 'bar',
-            //     data: {
-            //         labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
-            //         datasets: [{
-            //             label: 'Sleep Percentage',
-            //             data: [10, 20, 35, 25, 15, 40, 45, 30, 25, 35, 50, 20, 15, 35, 40, 30, 20, 45, 35, 30, 25, 50, 45, 30, 40, 35, 20, 25, 40, 45, 50],
-            //             backgroundColor: 'rgba(124, 186, 34, 0.7)', // Greenish color
-            //             borderColor: 'rgba(124, 186, 34, 1)',
-            //             barThickness: 8.8, // Set the bar width to 8.8px
-            //             borderRadius: {
-            //                 topLeft: 8, // Top left radius
-            //                 topRight: 8, // Top right radius
-            //                 bottomLeft: 0, // No radius at the bottom
-            //                 bottomRight: 0 // No radius at the bottom
-            //             }
-            //         }]
-            //     },
-            //     options: {
-            //         scales: {
-            //             y: {
-            //                 beginAtZero: true,
-            //                 max: 50, // End value
-            //                 title: {
-            //                     display: true,
-            //                 },
-            //                 ticks: {
-            //                     stepSize: 10, // Increment by 10
-            //                     callback: function (value) {
-            //                         return value + '%'; // Display percentages
-            //                     }
-            //                 },
-            //                 grid: {
-            //                     display: false // Hide y-axis grid lines
-            //                 }
-            //             },
-            //             x: {
-            //                 title: {
-            //                     display: true,
-            //                 },
-            //                 grid: {
-            //                     display: false // Hide x-axis grid lines
-            //                 }
-            //             }
-            //         },
-            //         plugins: {
-            //             legend: {
-            //                 display: false
-            //             },
-            //             tooltip: {
-            //                 callbacks: {
-            //                     label: function (context) {
-            //                         return context.dataset.label + ': ' + context.raw + '%';
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     }
-            // });
-            const sleepData = {
-                sunday: [7, 17],
-                monday: [6, 18],
-                tuesday: [8, 16],
-                wednesday: [5, 19],
-                thursday: [7, 17],
-                friday: [6, 18],
-                saturday: [8, 16],
-            };
-
-            const chartIds = [
-                'chart-sunday',
-                'chart-monday',
-                'chart-tuesday',
-                'chart-wednesday',
-                'chart-thursday',
-                'chart-friday',
-                'chart-saturday'
-            ];
-
-            const centerTextPlugin = {
-                id: 'centerText',
-                beforeDraw: function (chart) {
-                    const ctx = chart.ctx;
-                    const width = chart.width;
-                    const height = chart.height;
-                    const fontSize = "10px";
-
-                    const totalSleep = chart.config.data.datasets[0].data[1];
-                    const text = totalSleep + " h";
-                    ctx.restore();
-                    ctx.font = fontSize + " Arial";
-                    ctx.textBaseline = "middle";
-                    ctx.textAlign = "center";
-
-                    const textX = width / 2;
-                    const textY = height / 2;
-
-                    ctx.fillText(text, textX, textY);
-                    ctx.save();
-                },
-            };
-
-            chartIds.forEach((id) => {
-                const canvas = document.getElementById(id);
-                const day = id.split('-')[1];
-
-                new Chart(canvas, {
-                    type: "doughnut",
-                    data: {
-                        labels: ["Awake", "Sleep"],
-                        datasets: [
-                            {
-                                label: "Sleep Tracking",
-                                data: sleepData[day],
-                                backgroundColor: ["#45437F", "#91AF01"],
-                            },
-                        ],
+    </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        const ctx = document.getElementById('sleepTrackerBarChart').getContext('2d');
+        const sleepTrackerBarChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
+                datasets: [{
+                    label: 'Sleep Percentage',
+                    data: [10, 20, 35, 25, 15, 40, 45, 30, 25, 35, 50, 20, 15, 35, 40, 30, 20, 45, 35, 30, 25, 50, 45, 30, 40, 35, 20, 25, 40, 45, 50],
+                    backgroundColor: 'rgba(124, 186, 34, 0.7)', // Greenish color
+                    borderColor: 'rgba(124, 186, 34, 1)',
+                    barThickness: 8.8, // Set the bar width to 8.8px
+                    borderRadius: {
+                        topLeft: 8, // Top left radius
+                        topRight: 8, // Top right radius
+                        bottomLeft: 0, // No radius at the bottom
+                        bottomRight: 0 // No radius at the bottom
+                    }
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 50, // End value
+                        title: {
+                            display: true,
+                        },
+                        ticks: {
+                            stepSize: 10, // Increment by 10
+                            callback: function (value) {
+                                return value + '%'; // Display percentages
+                            }
+                        },
+                        grid: {
+                            display: false // Hide y-axis grid lines
+                        }
                     },
-                    options: {
-                        borderWidth: 0,
-                        borderRadius: 0,
-                        hoverBorderWidth: 0,
-                        plugins: {
-                            legend: {
-                                display: false,
-                            },
+                    x: {
+                        title: {
+                            display: true,
+                        },
+                        grid: {
+                            display: false // Hide x-axis grid lines
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                return context.dataset.label + ': ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        const sleepData = {
+            sunday: [7, 17],
+            monday: [6, 18],
+            tuesday: [8, 16],
+            wednesday: [5, 19],
+            thursday: [7, 17],
+            friday: [6, 18],
+            saturday: [8, 16],
+        };
+
+        const chartIds = [
+            'chart-sunday',
+            'chart-monday',
+            'chart-tuesday',
+            'chart-wednesday',
+            'chart-thursday',
+            'chart-friday',
+            'chart-saturday'
+        ];
+
+        const centerTextPlugin = {
+            id: 'centerText',
+            beforeDraw: function (chart) {
+                const ctx = chart.ctx;
+                const width = chart.width;
+                const height = chart.height;
+                const fontSize = "10px";
+
+                const totalSleep = chart.config.data.datasets[0].data[1];
+                const text = totalSleep + " h";
+                ctx.restore();
+                ctx.font = fontSize + " Arial";
+                ctx.textBaseline = "middle";
+                ctx.textAlign = "center";
+
+                const textX = width / 2;
+                const textY = height / 2;
+
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            },
+        };
+
+        chartIds.forEach((id) => {
+            const canvas = document.getElementById(id);
+            const day = id.split('-')[1];
+
+            new Chart(canvas, {
+                type: "doughnut",
+                data: {
+                    labels: ["Awake", "Sleep"],
+                    datasets: [
+                        {
+                            label: "Sleep Tracking",
+                            data: sleepData[day],
+                            backgroundColor: ["#45437F", "#91AF01"],
+                        },
+                    ],
+                },
+                options: {
+                    borderWidth: 0,
+                    borderRadius: 0,
+                    hoverBorderWidth: 0,
+                    plugins: {
+                        legend: {
+                            display: false,
                         },
                     },
-                    plugins: [centerTextPlugin],
-                });
+                },
+                plugins: [centerTextPlugin],
             });
+        });
+    </script>
+    <script src="chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
-        <script src="chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-            </script>
 </body>
 
 </html>

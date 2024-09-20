@@ -1339,6 +1339,10 @@ tbody {
 html {
   font-size: 62.3%;
 }
+#weightTrackerBarChart{
+  width: 100px;
+  height: 100px;
+}
 
 .weightTrackerMainContainerInfo {
   padding-left: 62px;
@@ -2100,6 +2104,12 @@ display: flex;
 }
 
 @media (max-width: 768px) {
+  .monthlyOverViewMainContainer{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* meal */
   .informationForHealth,
   .informationForFood {
     gap: 2rem;
@@ -2576,3 +2586,11 @@ width: 100px;
   margin-left: 0px;
 }
 }
+@media (max-width:390px)
+{
+  .averageWeightIncreasePerDay{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+}}
