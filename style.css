@@ -2271,6 +2271,7 @@ display: flex;
 .averageWeightIncreasePerDay {
   gap: 77px;}
 
+
   /* meal */
   .mealTrackerBackgroundContainer {
     width: 467px;
@@ -2387,7 +2388,7 @@ display: flex;
   }
 
   .sleepTrackerBackgroundContainer p ,.weightTrackerBackgroundContainer p{
-    margin-right: 174px;
+    margin-right: 159px;
   }
 
   .navContainer {
