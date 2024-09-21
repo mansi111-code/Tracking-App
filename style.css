@@ -130,6 +130,7 @@ a {
   border: none;
   height: 50px;
   width: 100%;
+  background-color: #fafafb;
 }
 
 .searchClientInput::placeholder,
@@ -2045,7 +2046,19 @@ display: flex;
     width: 232px;
     height: 222px;
   }
+.informationForHealth,.informationForFood{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.searchBarMainContainer{
+  display: flex;
+  justify-content: center;
+}
+.searchBar{
+  margin-left: 0px;
+}
   .sleep p {
     padding-right: 167px;
   }
@@ -2606,3 +2619,16 @@ width: 100px;
   gap: 0px;
   align-items: center;
 }}
+/* index */
+@media (max-width: 534px){
+.searchBarMainContainer{
+  display: flex;
+  justify-content: center;
+}
+.searchBar{
+  width: 298px;
+  height: 51px;
+  /* margin-left: 10px; */
+  margin-left: 0px;
+}
+}
