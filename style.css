@@ -325,7 +325,7 @@ a {
   height: 43px;
 }
 
-.navContainer {
+/* .navContainer {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -334,7 +334,7 @@ a {
   padding-right: 100px;
   height: 65px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .leftSideOfHeader {
   display: flex;
@@ -666,7 +666,7 @@ a {
   border-radius: 100px;
 }
 
-.navContainer {
+/* .navContainer {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -675,7 +675,7 @@ a {
   padding-right: 100px;
   height: 65px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .leftSideOfHeader {
   display: flex;
@@ -1016,7 +1016,7 @@ a {
   border-radius: 100px;
 }
 
-.navContainer {
+/* .navContainer {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -1025,7 +1025,7 @@ a {
   padding-right: 100px;
   height: 65px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .leftSideOfHeader {
   display: flex;
@@ -1382,7 +1382,7 @@ html {
   border-radius: 100px;
 }
 
-.navContainer {
+/* .navContainer {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -1391,7 +1391,7 @@ html {
   padding-right: 100px;
   height: 65px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .leftSideOfHeader {
   display: flex;
@@ -1679,7 +1679,7 @@ html {
   border-radius: 100px;
 }
 
-.navContainer {
+/* .navContainer {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
@@ -1688,7 +1688,7 @@ html {
   padding-right: 100px;
   height: 65px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .leftSideOfHeader {
   display: flex;
@@ -2627,8 +2627,8 @@ width: 100px;
 }
 .searchBar{
   width: 298px;
-  height: 64px;
-  /* margin-left: 10px; */
+  height: 64fpx;
+  /* margimonthlyOverview"-left: 10px; */
   margin-left: 0px;
 }
 }
