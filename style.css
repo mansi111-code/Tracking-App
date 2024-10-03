@@ -645,6 +645,7 @@ a {
   padding: 31px;
   display: flex;
   gap: 33rem;
+  align-items: center;
 }
 
 /* /Water Page/ */
@@ -2130,6 +2131,33 @@ display: flex;
 }
 
 @media (max-width: 768px) {
+ 
+    /* .monthlyOverview {
+        width: 405px;
+        /* height: 200px; Set width to 500px for smaller screens */
+    }
+
+    /* .chartContainer {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        /* width: 100%; /* Ensure it takes the full width of the parent */
+        /* white-space: nowrap;
+         /* Prevent line breaks to enable scrolling */
+         /* height: 100%;
+    }
+
+    #sleepTrackerBarChart {
+        width: 800px; /* Set a wider width for the chart to enable scrolling */
+    /* } */ 
+
+
+
+
+
+.InnerMainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .sleepTrackerBarChart {
     display: block !important;
@@ -2165,6 +2193,8 @@ display: flex;
     gap: 10rem;
   }
 /* sleep */
+
+
   .sleepToWakeupInfo {
     display: flex;
     flex-direction: column;
