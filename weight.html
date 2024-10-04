@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="monthlyOverview">
+            <div class="monthlyOverview">
                 <div class="monthlyOverviewDaysWeek">
                     <p id="monthlyOverviewPara">Monthly Overview</p>
                     <div class="weeksDaysContainers">
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             <div class="chartContainer">
                 <canvas id="weightTrackerBarChart"></canvas>
             </div>
@@ -216,67 +216,65 @@
     </div></div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
-        // const ctx = document.getElementById('weightTrackerBarChart').getContext('2d');
-        // const waterTrackerBarChart = new Chart(ctx, {
-        //     type: 'bar',
-        //     data: {
-        //         labels: Array.from({ length: 31 }, (_, i) => i + 1),
-        //         datasets: [{
-        //             label: 'Water Intake (Liters)',
-        //             data: [2.5, 3, 1.8, 2.2, 2.6, 3.5, 2.8, 3.1, 2.7, 2.9, 3.4, 2, 1.8, 3, 3.2, 2.7, 2.5, 3.6, 2.8, 3, 2.5, 3.4, 3.1, 2.9, 3.2, 2.8, 2, 2.7, 3.3, 3.5, 3.7], // Water intake data
-        //             backgroundColor: '#7CBA22',
-        //             borderColor: '#7CBA22',
-        //             barThickness: 8.8,
-        //             borderRadius: {
-        //                 topLeft: 8,
-        //                 topRight: 8,
-        //                 bottomLeft: 0,
-        //                 bottomRight: 0
-        //             }
-        //         }]
-        //     },
-        //     options: {
-        //         scales: {
-        //             y: {
-        //                 beginAtZero: true,
-        //                 max: 6,
-        //                 title: {
-        //                     display: true,
-        //                 },
-        //                 ticks: {
-        //                     stepSize: 1,
-        //                     callback: function (value) {
-        //                         return value + 'L';
-        //                     }
-        //                 },
-        //                 grid: {
-        //                     display: false,
-        //                     color: '#E0E0E0'
-        //                 }
-        //             },
-        //             x: {
-        //                 title: {
-        //                     display: true,
-        //                 },
-        //                 grid: {
-        //                     display: false
-        //                 }
-        //             }
-        //         },
-        //         plugins: {
-        //             legend: {
-        //                 display: false
-        //             },
-        //             tooltip: {
-        //                 callbacks: {
-        //                     label: function (context) {
-        //                         return context.dataset.label + ': ' + context.raw + 'L';
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // });
+       const ctx = document.getElementById('weightTrackerBarChart').getContext('2d');
+const weightTrackerBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
+        datasets: [{
+            label: 'Weight (g)', // Label for the dataset
+            data: [2500, 3000, 1800, 2200, 2600, 3500, 2800, 3100, 2700, 2900, 3400, 2000, 1800, 3000, 3200, 2700, 2500, 3600, 2800, 3000, 2500, 3400, 3100, 2900, 3200, 2800, 2000, 2700, 3300, 3500, 3700], // Weight data in grams
+            backgroundColor: '#7CBA22',
+            borderColor: '#7CBA22',
+            barThickness: 8.8,
+            borderRadius: {
+                topLeft: 8,
+                topRight: 8,
+                bottomLeft: 0,
+                bottomRight: 0
+            }
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 6000, // Set maximum value to 6000g
+                ticks: {
+                    stepSize: 1000, // Increment by 500g
+                    callback: function (value) {
+                        return value + 'g'; // Display "g" next to the tick values
+                    }
+                },
+                grid: {
+                    display: false, // Hiding grid lines
+                    color: '#E0E0E0'
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                },
+                grid: {
+                    display: false // Hiding x-axis grid lines
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                display: false // Hiding the legend
+            },
+            tooltip: {
+                callbacks: {
+                    label: function (context) {
+                        return context.dataset.label + ': ' + context.raw + 'g'; // Display "g" in the tooltip
+                    }
+                }
+            }
+        }
+    }
+});
+
     </script>
 
     <script>

@@ -2317,7 +2317,19 @@ display: flex;
 
 
   /* water */
+  .waterTrackerBackgroundContainer {
+    height: 224px;
+    width: 405px;
+  }
 
+  .waterTracker img {
+    width: 385px;
+    height: 171px;
+  }
+
+  .waterTrackerBackgroundContainer p {
+    margin-right: 259px;
+  }
   .waterAllContainersInMLWithTime {
     display: flex;
     flex-direction: column;
@@ -2421,7 +2433,7 @@ align-items: center;}
 }
 
 /* water */
-@media (max-width: 845px) {
+@media (min-width:768px) and (max-width: 845px) {
   .waterTrackerBackgroundContainer {
     height: 310px;
     width: 627px;
