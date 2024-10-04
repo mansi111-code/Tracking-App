@@ -9,7 +9,7 @@
 html {
   font-size: 62.3%;
 }
-.InnerMainContainer{
+.InnerMainContainer {
   padding-left: 50px;
 }
 .aiWhatsapp p {
@@ -285,7 +285,6 @@ a {
 }
 
 /* /Sleep Page Style/ */
-
 
 /* #sleepTrackerBarChart{
   width: 600px;
@@ -630,7 +629,8 @@ a {
   border-radius: 7px;
   margin-top: 54px;
   margin-bottom: 59px;
-  margin-left: 59px;
+  /* margin-left: 59px; */
+  width: 750px;
 }
 
 #monthlyOverviewPara {
@@ -1360,13 +1360,13 @@ tbody {
 html {
   font-size: 62.3%;
 }
-#weightTrackerBarChart{
+#weightTrackerBarChart {
   width: 100px;
   height: 100px;
 }
 
 .weightTrackerMainContainerInfo {
-  padding-left: 62px;
+  /* padding-left: 62px; */
 }
 
 .aiWhatsapp p {
@@ -1656,9 +1656,8 @@ html {
 } */
 
 /* /Food Tracker/ */
-.mainContainer{
+.mainContainer {
   background-color: #fafafb;
-
 }
 .mealTrackerMainContainer {
   /* background-color: #fafafb; */
@@ -1839,7 +1838,7 @@ html {
   align-items: center;
   gap: 20rem;
 }
-.dayAndMealInnerContainer p{
+.dayAndMealInnerContainer p {
   margin-bottom: 0px;
 }
 .onlyWeekAndDayContainer {
@@ -1871,7 +1870,7 @@ html {
   display: flex;
   gap: 2rem;
 }
-.foodContainers{
+.foodContainers {
   gap: 2rem;
   display: flex;
 }
@@ -1890,7 +1889,7 @@ html {
   margin-bottom: 0px;
 }
 
-.steakContainer span{
+.steakContainer span {
   font-size: 8px;
   font-weight: 400;
   color: #a5a5a5;
@@ -1953,7 +1952,7 @@ html {
 } */
 #monthlyOverviewPara {
   margin-bottom: 20px;
-margin-top: 20px;
+  margin-top: 20px;
 }
 .selectorBorder {
   border-radius: 100px;
@@ -2000,41 +1999,40 @@ margin-top: 20px;
 
 /* meal */
 @media (max-width: 1024px) {
-  .mealTrackerMainContainer{
+  .mealTrackerMainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0px;
   }
-.foodContainers{
-  display: flex;
-  flex-direction: row;
-}
-.foodVariety{
-  gap: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.monthlyOverviewDaysWeekMealContainer{
-  gap: 12rem;
-  justify-content: center;
-}
-.allTheDataOfMeal{
-display: flex;
+  .foodContainers {
+    display: flex;
+    flex-direction: row;
+  }
+  .foodVariety {
+    gap: 6rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-.allAboutMeal{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.dayAndMealInnerContainer{
-  gap: 8rem;
-  margin-bottom: 2rem;
-    
-}
+  }
+  .monthlyOverviewDaysWeekMealContainer {
+    gap: 12rem;
+    justify-content: center;
+  }
+  .allTheDataOfMeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .allAboutMeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dayAndMealInnerContainer {
+    gap: 8rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* index */
@@ -2056,19 +2054,19 @@ display: flex;
     width: 232px;
     height: 222px;
   }
-.informationForHealth,.informationForFood{
+  .informationForHealth,
+  .informationForFood {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-.searchBarMainContainer{
-  display: flex;
-  justify-content: center;
-}
-.searchBar{
-  margin-left: 0px;
-}
+  }
+  .searchBarMainContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .searchBar {
+    margin-left: 0px;
+  }
   .sleep p {
     padding-right: 167px;
   }
@@ -2093,329 +2091,322 @@ display: flex;
   }
 
   /* ATTENDACNCE */
-  .attendanceTrackerBackgroundContainer{
+  .attendanceTrackerBackgroundContainer {
     margin-left: 0px;
   }
-  .attendanceTrackerMainContainer{
+  .attendanceTrackerMainContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .studentSchema{
+  .studentSchema {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .studentAttendance{
+  .studentAttendance {
     width: 100%;
     margin-left: 0px;
   }
   .presentApsentAndAllDetails {
-    gap: 2rem;}
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 850px) {
-  .sleepTracker img ,.weightTracker img{
+  .sleepTracker img,
+  .weightTracker img {
     width: 497px;
     height: 240px;
   }
 
-  .sleepTrackerBackgroundContainer p,.weightTrackerBackgroundContainer p {
+  .sleepTrackerBackgroundContainer p,
+  .weightTrackerBackgroundContainer p {
     margin-right: 360px;
   }
 
-  .sleepTrackerBackgroundContainer ,.weightTrackerBackgroundContainer{
+  .sleepTrackerBackgroundContainer,
+  .weightTrackerBackgroundContainer {
     height: 292px;
     width: 516px;
   }
 }
 @media (min-width: 320px) {
-.monthlyOverview{
-  padding-bottom: 20px;
+  .monthlyOverview {
+    padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-}
+  }
 }
 @media (max-width: 768px) {
- 
   .monthlyOverViewMainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.monthlyOverviewDaysWeek {
-  padding: 13px;
-}
-.monthlyOverview {
+  }
+  .monthlyOverviewDaysWeek {
+    padding: 13px;
+  }
+  .monthlyOverview {
     width: 100%;
-    max-width: 410px; 
+    max-width: 410px;
     overflow-x: auto; /* Enable horizontal scrolling */
     margin-left: 0px;
-}
+  }
 
-.chartContainer {
+  .chartContainer {
     width: 600px; /* Set a larger width for the chart to enable scrolling */
     overflow-x: auto; /* Allow horizontal scrolling within this container */
-}
-.monthlyOverviewDaysWeek{
-  gap: 10rem;
-}
+  }
+  .monthlyOverviewDaysWeek {
+    gap: 10rem;
+  }
 
-    /* .monthlyOverview {
+  /* .monthlyOverview {
         width: 405px; 
     } */
 
-}
 
-
-
-
-
-.InnerMainContainer{
+.InnerMainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-  .sleepTrackerBarChart {
-    display: block !important;
-    box-sizing: border-box !important;
-    height: 220px !important;
-    width: 440px !important;
+.sleepTrackerBarChart {
+  display: block !important;
+  box-sizing: border-box !important;
+  height: 220px !important;
+  width: 440px !important;
 }
-  .monthlyOverViewMainContainer{
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* meal */
-  .informationForHealth,
-  .informationForFood {
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+.monthlyOverViewMainContainer {
+  display: flex;
+  justify-content: center;
+}
 
-  .searchBar {
-    margin-left: 60px;
-  }
+/* meal */
+.informationForHealth,
+.informationForFood {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .navContainer {
-    padding-left: 21px;
-    padding-right: 24px;
-  }
+.searchBar {
+  margin-left: 60px;
+}
 
-  .piechartWithPairs {
-    display: flex;
-    gap: 10rem;
-  }
+.navContainer {
+  padding-left: 21px;
+  padding-right: 24px;
+}
+
+.piechartWithPairs {
+  display: flex;
+  gap: 10rem;
+}
 /* sleep */
 
+.sleepToWakeupInfo {
+  display: flex;
+  flex-direction: column;
+}
 
-  .sleepToWakeupInfo {
-    display: flex;
-    flex-direction: column;
-  }
+.bedAndAsleep,
+.sleepAndWakeupTime {
+  display: flex;
+  gap: 9rem;
+}
 
-  .bedAndAsleep,
-  .sleepAndWakeupTime {
-    display: flex;
-    gap: 9rem;
-  }
+.averageSleepTime {
+  gap: 43px;
+}
 
-  .averageSleepTime {
-    gap: 43px;
-  }
+.weekWholeData {
+  display: flex;
+  flex-direction: column;
+}
 
-  .weekWholeData {
-    display: flex;
-    flex-direction: column;
-  }
+.sleepTrackerBackgroundContainer {
+  height: 224px;
+  width: 405px;
+}
 
-  .sleepTrackerBackgroundContainer {
-    height: 224px;
-    width: 405px;
-  }
+.sleepTracker img {
+  width: 385px;
+  height: 171px;
+}
 
-  .sleepTracker img {
-    width: 385px;
-    height: 171px;
-  }
+.sleepTrackerBackgroundContainer p {
+  margin-right: 259px;
+}
 
-  .sleepTrackerBackgroundContainer p {
-    margin-right: 259px;
-  }
+.dayAndMonthWithDateContainer {
+  gap: 29px;
+}
 
-  .dayAndMonthWithDateContainer {
-    gap: 29px;
-  }
+.sleepingTimeWithHoursAndMinutes {
+  width: 5rem;
+}
 
-  .sleepingTimeWithHoursAndMinutes {
-    width: 5rem;
-  }
+.averageSleepTime {
+  gap: 8rem;
+}
+.sleepTrackerMainContainerInfo,
+.waterTrackerMainContainerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+}
 
-  .averageSleepTime {
-    gap: 8rem;
-  }
-  .sleepTrackerMainContainerInfo,
-  .waterTrackerMainContainerInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
-  }
+.sleepInfoMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .sleepInfoMainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.singleDayInfo {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
 
-  .singleDayInfo {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-  }
+.sleepAndWakeupTime,
+.bedAndAsleep {
+  gap: 6rem;
+  width: 218px;
+}
 
-  .sleepAndWakeupTime,
-  .bedAndAsleep {
-    gap: 6rem;
-    width: 218px;
-  }
+.peterImg img {
+  width: 40px;
+  height: 38px;
+}
 
-  .peterImg img {
-    width: 40px;
-    height: 38px;
-  }
+.premiumTrail {
+  height: 24px;
+}
 
-  .premiumTrail {
-    height: 24px;
-  }
+.premiumTrail p {
+  font-size: 8px;
+  padding: 10px;
+}
 
-  .premiumTrail p {
-    font-size: 8px;
-    padding: 10px;
-  }
+.peterAccount p {
+  font-size: 9px;
+}
 
-  .peterAccount p {
-    font-size: 9px;
-  }
+.peterAccount span {
+  font-size: 10px;
+}
 
-  .peterAccount span {
-    font-size: 10px;
-  }
+.aiWhatsapp p {
+  font-size: 15px;
+}
 
-  .aiWhatsapp p {
-    font-size: 15px;
-  }
+.leftSideOfHeader {
+  gap: 1rem;
+}
 
-  .leftSideOfHeader {
-    gap: 1rem;
-  }
+/* water */
+.waterTrackerBackgroundContainer {
+  height: 224px;
+  width: 405px;
+}
 
+.waterTracker img {
+  width: 385px;
+  height: 171px;
+}
 
+.waterTrackerBackgroundContainer p {
+  margin-right: 259px;
+}
+.waterAllContainersInMLWithTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  /* water */
-  .waterTrackerBackgroundContainer {
-    height: 224px;
-    width: 405px;
-  }
+.waterInvokeTodayInfo {
+  display: flex;
+  justify-content: center;
+}
 
-  .waterTracker img {
-    width: 385px;
-    height: 171px;
-  }
-
-  .waterTrackerBackgroundContainer p {
-    margin-right: 259px;
-  }
-  .waterAllContainersInMLWithTime {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .waterInvokeTodayInfo {
-    display: flex;
-    justify-content: center;
-  }
-
-  .averagewaterIntakePerDay {
-    gap: 8rem;
-  }
-  .moreDetailsOuterContainer {
-    display: flex;
-    justify-content: center;
-  }
-  .allWatersAndMls {
-    gap: 10rem;
-  }
+.averagewaterIntakePerDay {
+  gap: 8rem;
+}
+.moreDetailsOuterContainer {
+  display: flex;
+  justify-content: center;
+}
+.allWatersAndMls {
+  gap: 10rem;
+}
 
 /* weight */
-.averageDayAndDetails{
-display: flex;
-flex-direction: column;
-align-items: center;}
-.weightTrackerMainContainerInfo{
+.averageDayAndDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weightTrackerMainContainerInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 0px;
 }
 .averageWeightIncreasePerDay {
-  gap: 77px;}
-
-
-  /* meal */
-  .mealTrackerBackgroundContainer {
-    width: 467px;
-    height: 231px;
-  }
-
-  .mealTracker img {
-    width: 446px;
-    height: 175px;
-  }
-  .mealTrackerBackgroundContainer p {
-    margin-right: 329px;
-  }
-  /* ATTENDANCE */
-  .attendanceTrackerBackgroundContainer {
-    margin-left: 55px;
-    height: 207px;
-    width: 374px;
-  margin-left: 0px;
-  }
-    .attendanceTracker img {
-      width: 356px;
-      height: 141px;
-  }
-  .attendanceTrackerBackgroundContainer p {
-    margin-right: 178px;
+  gap: 77px;
 }
 
-.InnerMainContainer{
+/* meal */
+.mealTrackerBackgroundContainer {
+  width: 467px;
+  height: 231px;
+}
+
+.mealTracker img {
+  width: 446px;
+  height: 175px;
+}
+.mealTrackerBackgroundContainer p {
+  margin-right: 329px;
+}
+/* ATTENDANCE */
+.attendanceTrackerBackgroundContainer {
+  margin-left: 55px;
+  height: 207px;
+  width: 374px;
+  margin-left: 0px;
+}
+.attendanceTracker img {
+  width: 356px;
+  height: 141px;
+}
+.attendanceTrackerBackgroundContainer p {
+  margin-right: 178px;
+}
+
+.InnerMainContainer {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 }
-
 /* weight */
 @media (min-width: 424px) and (max-width: 600px) {
-.weightTrackerBackgroundContainer{
-  width: 424px;
-  height: 274px;
-}
-.weightTracker img{
-  width: 400px;
-  height: 220px;
-}
-.weightTrackerBackgroundContainer p{
-  margin-right: 257px;
-}
-
+  .weightTrackerBackgroundContainer {
+    width: 424px;
+    height: 274px;
+  }
+  .weightTracker img {
+    width: 400px;
+    height: 220px;
+  }
+  .weightTrackerBackgroundContainer p {
+    margin-right: 257px;
+  }
 }
 @media (min-width: 360px) and (max-width: 478px) {
   .navContainer {
@@ -2433,7 +2424,7 @@ align-items: center;}
 }
 
 /* water */
-@media (min-width:768px) and (max-width: 845px) {
+@media (min-width: 768px) and (max-width: 845px) {
   .waterTrackerBackgroundContainer {
     height: 310px;
     width: 627px;
@@ -2454,21 +2445,21 @@ align-items: center;}
     height: 222px;
     width: 364px;
     margin-left: 0px;
-}
+  }
   .attendanceTracker img {
     width: 343px;
     height: 160px;
-}
+  }
   .attendanceTrackerBackgroundContainer p {
     margin-right: 170px;
-}
+  }
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
-.monthlyOverview{
-  width: 310px;
-  /* height: 203px; */
-}
+  .monthlyOverview {
+    width: 310px;
+    /* height: 203px; */
+  }
 
   .averageSleepTime {
     display: flex;
@@ -2485,17 +2476,20 @@ align-items: center;}
     align-items: center;
   }
 
-  .sleepTracker img ,.weightTracker img{
+  .sleepTracker img,
+  .weightTracker img {
     width: 296px;
     height: 152px;
   }
 
-  .sleepTrackerBackgroundContainer,.weightTrackerBackgroundContainer {
+  .sleepTrackerBackgroundContainer,
+  .weightTrackerBackgroundContainer {
     height: 203px;
     width: 310px;
   }
 
-  .sleepTrackerBackgroundContainer p ,.weightTrackerBackgroundContainer p{
+  .sleepTrackerBackgroundContainer p,
+  .weightTrackerBackgroundContainer p {
     margin-right: 159px;
   }
 
@@ -2574,7 +2568,7 @@ align-items: center;}
     justify-content: center;
     /* flex-direction: column; */
   }
-  .piechartWithPairs{
+  .piechartWithPairs {
     gap: 5rem;
   }
 
@@ -2617,103 +2611,104 @@ align-items: center;}
     margin-right: 264px;
   }
 }
-@media(max-width: 425px) {
- /* meal */
- .foodContainers{
-  /* gap: 1rem; */
-  gap: 4px;
-}}
+@media (max-width: 425px) {
+  /* meal */
+  .foodContainers {
+    /* gap: 1rem; */
+    gap: 4px;
+  }
+}
 
 /* meal */
 @media (max-width: 500px) {
-.mealTrackerBackgroundContainer{
-  width: 314px;
-  height: 194px;
-}
-.mealTracker img{
-  width: 294px;
+  .mealTrackerBackgroundContainer {
+    width: 314px;
+    height: 194px;
+  }
+  .mealTracker img {
+    width: 294px;
     height: 135px;
-}
-.mealTrackerBackgroundContainer p{
-  margin-right: 176px;
-}
-.dayAndMealInnerContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.monthlyOverviewDaysWeekMealContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+  }
+  .mealTrackerBackgroundContainer p {
+    margin-right: 176px;
+  }
+  .dayAndMealInnerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .monthlyOverviewDaysWeekMealContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 @media (max-width: 368px) {
-.steakContainer{
-width: 100px;
-}
-/* .vegFoodContainer img {
+  .steakContainer {
+    width: 100px;
+  }
+  /* .vegFoodContainer img {
   margin-left: -5px;
 } */
-.steakContainer img {
-  margin-left: 3px;
-}
-/* .mealContainer img {
+  .steakContainer img {
+    margin-left: 3px;
+  }
+  /* .mealContainer img {
   margin-left: 3px;
 } */
 }
-@media (max-width:425px)and (min-width: 320px){
-.studentDetails {
-  width: 299px;
+@media (max-width: 425px) and (min-width: 320px) {
+  .studentDetails {
+    width: 299px;
+  }
+  .allColumnContainer {
+    margin-left: 0px;
+  }
+  .presentApsentAndAllDetails {
+    gap: 0px;
+  }
+  .attendanceTrackerBackgroundContainer p {
+    margin-top: 0px;
+    margin-right: 119px;
+  }
+  .attendanceTracker img {
+    width: 298px;
+    height: 123px;
+  }
+  .attendanceTrackerBackgroundContainer {
+    /* margin-left: 55px; */
+    height: 174px;
+    width: 313px;
+    margin-left: 0px;
+  }
+  .presentApsentAndAllDetails {
+    gap: 11px;
+  }
+  .allColumnContainer {
+    margin-left: 0px;
+  }
+  .underlineToAll {
+    margin-left: 0px;
+  }
 }
-.allColumnContainer {
-  margin-left: 0px;
+@media (max-width: 390px) {
+  .averageWeightIncreasePerDay {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
 }
-.presentApsentAndAllDetails{
-  gap: 0px;
-}
-.attendanceTrackerBackgroundContainer p {
-  margin-top: 0px;
-  margin-right:119px;
-}
-.attendanceTracker img {
-  width: 298px;
-  height: 123px;
-}
-.attendanceTrackerBackgroundContainer {
-  /* margin-left: 55px; */
-  height: 174px;
-  width: 313px;
-  margin-left: 0px;
-}
-.presentApsentAndAllDetails {
-  gap: 11px;
-}
-.allColumnContainer {
-  margin-left: 0px;
-}
-.underlineToAll{
-  margin-left: 0px;
-}
-}
-@media (max-width:390px)
-{
-  .averageWeightIncreasePerDay{
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-}}
 /* index */
-@media (max-width: 534px){
-.searchBarMainContainer{
-  display: flex;
-  justify-content: center;
-}
-.searchBar{
-  width: 298px;
-  height: 64fpx;
-  /* margimonthlyOverview"-left: 10px; */
-  margin-left: 0px;
-}
+@media (max-width: 534px) {
+  .searchBarMainContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .searchBar {
+    width: 298px;
+    height: 64fpx;
+    /* margimonthlyOverview"-left: 10px; */
+    margin-left: 0px;
+  }
 }
