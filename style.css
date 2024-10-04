@@ -624,8 +624,8 @@ a {
 }
 
 .monthlyOverview {
-  height: 361px;
-  width: 723px;
+  /* height: 361px;
+  width: 723px; */
   border: 1px solid #909090;
   border-radius: 7px;
   margin-top: 54px;
@@ -2129,25 +2129,43 @@ display: flex;
     width: 516px;
   }
 }
-
+@media (min-width: 320px) {
+.monthlyOverview{
+  padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
 @media (max-width: 768px) {
  
+  .monthlyOverViewMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monthlyOverviewDaysWeek {
+  padding: 13px;
+}
+.monthlyOverview {
+    width: 100%;
+    max-width: 410px; 
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-left: 0px;
+}
+
+.chartContainer {
+    width: 600px; /* Set a larger width for the chart to enable scrolling */
+    overflow-x: auto; /* Allow horizontal scrolling within this container */
+}
+.monthlyOverviewDaysWeek{
+  gap: 10rem;
+}
+
     /* .monthlyOverview {
-        width: 405px;
-        /* height: 200px; Set width to 500px for smaller screens */
-    }
+        width: 405px; 
+    } */
 
-    /* .chartContainer {
-        overflow-x: auto; /* Enable horizontal scrolling */
-        /* width: 100%; /* Ensure it takes the full width of the parent */
-        /* white-space: nowrap;
-         /* Prevent line breaks to enable scrolling */
-         /* height: 100%;
-    }
-
-    #sleepTrackerBarChart {
-        width: 800px; /* Set a wider width for the chart to enable scrolling */
-    /* } */ 
+}
 
 
 
@@ -2435,6 +2453,11 @@ align-items: center;}
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
+.monthlyOverview{
+  width: 310px;
+  /* height: 203px; */
+}
+
   .averageSleepTime {
     display: flex;
     gap: 0px;

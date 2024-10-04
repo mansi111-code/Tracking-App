@@ -278,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="monthlyOverview">
+                <div class="monthlyOverview">
                 <div class="monthlyOverviewDaysWeek">
                     <p id="monthlyOverviewPara">Monthly Overview</p>
                     <div class="weeksDaysContainers">
@@ -309,73 +309,67 @@
                 </div>
             </div>
         </div>
-    </div> --></div>
+    </div>
+</div>
                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                 <script>
-                    //     const ctx = document.getElementById('waterTrackerBarChart').getContext('2d');
-                    //     const waterTrackerBarChart = new Chart(ctx, {
-                    //         type: 'bar',
-                    //         data: {
-                    //             labels: Array.from({ length: 31 }, (_, i) => i + 1),
-                    //             datasets: [{
-                    //                 label: 'Water Intake (Liters)',
-                    //                 data: [2.5, 3, 1.8, 2.2, 2.6, 3.5, 2.8, 3.1, 2.7, 2.9, 3.4, 2, 1.8, 3, 3.2, 2.7, 2.5, 3.6, 2.8, 3, 2.5, 3.4, 3.1, 2.9, 3.2, 2.8, 2, 2.7, 3.3, 3.5, 3.7], // Water intake data
-                    //                 backgroundColor: '#7CBA22',
-                    //                 borderColor: '#7CBA22',
-                    //                 barThickness: 8.8,
-                    //                 borderRadius: {
-                    //                     topLeft: 8,
-                    //                     topRight: 8,
-                    //                     bottomLeft: 0,
-                    //                     bottomRight: 0
-                    //                 }
-                    //             }]
-                    //         },
-                    //         options: {
-                    //             scales: {
-                    //                 y: {
-                    //                     beginAtZero: true,
-                    //                     max: 6,
-                    //                     title: {
-                    //                         display: true,
-                    //                     },
-                    //                     ticks: {
-                    //                         stepSize: 1,
-                    //                         callback: function (value) {
-                    //                             return value + 'L';
-                    //                         }
-                    //                     },
-                    //                     grid: {
-                    //                         display: false,
-                    //                         color: '#E0E0E0'
-                    //                     }
-                    //                 },
-                    //                 x: {
-                    //                     title: {
-                    //                         display: true,
-                    //                     },
-                    //                     grid: {
-                    //                         display: false
-                    //                     }
-                    //                 }
-                    //             },
-                    //             plugins: {
-                    //                 legend: {
-                    //                     display: false
-                    //                 },
-                    //                 tooltip: {
-                    //                     callbacks: {
-                    //                         label: function (context) {
-                    //                             return context.dataset.label + ': ' + context.raw + 'L';
-                    //                         }
-                    //                     }
-                    //                 }
-                    //             }
-                    //         }
-                    //     });
-                    // </script>
+                    const ctx = document.getElementById('waterTrackerBarChart').getContext('2d');
+const waterTrackerBarChart = new Chart(ctx, {
+    type: 'bar', // Chart type
+    data: {
+        labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
+        datasets: [{
+            label: 'Water Intake', // Removing "Liters" from the main label
+            data: [2.5, 3, 1.8, 2.2, 2.6, 3.5, 2.8, 3.1, 2.7, 2.9, 3.4, 2, 1.8, 3, 3.2, 2.7, 2.5, 3.6, 2.8, 3, 2.5, 3.4, 3.1, 2.9, 3.2, 2.8, 2, 2.7, 3.3, 3.5, 3.7], // Water intake data
+            backgroundColor: '#7CBA22',
+            borderColor: '#7CBA22',
+            barThickness: 8.8,
+            borderRadius: {
+                topLeft: 8,
+                topRight: 8,
+                bottomLeft: 0,
+                bottomRight: 0
+            }
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 6, // Maximum value for the y-axis
+                ticks: {
+                    stepSize: 1, // Increment by 1
+                    callback: function (value) {
+                        return value + 'L'; // Display "L" next to the tick values
+                    }
+                },
+                grid: {
+                    display: false, // Hiding grid lines
+                    color: '#E0E0E0'
+                }
+            },
+            x: {
+                grid: {
+                    display: false // Hiding x-axis grid lines
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                display: false // Hiding the legend
+            },
+            tooltip: {
+                callbacks: {
+                    label: function (context) {
+                        return context.dataset.label + ': ' + context.raw + 'L'; // Display "L" in the tooltip
+                    }
+                }
+            }
+        }
+    }
+});
 
-                <script>
+          
                     const waterData = {
                         sunday: [0.9, 2.1],
                         monday: [1.2, 1.8],

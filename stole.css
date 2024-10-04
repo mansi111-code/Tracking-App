@@ -1,0 +1,39 @@
+.monthlyOverview {
+  height: 361px;
+  width: 723px;
+  border: 1px solid #909090;
+  border-radius: 7px;
+  margin-top: 54px;
+  margin-bottom: 59px;
+}
+
+.monthlyOverviewDaysWeek {
+  padding: 31px;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+.monthlyOverViewMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monthlyOverview {
+    width: 100%;
+    max-width: 405px; /* Set the width to 405px */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.chartContainer {
+    width: 600px; /* Set a larger width for the chart to enable scrolling */
+    overflow-x: auto; /* Allow horizontal scrolling within this container */
+}
+
+
+    /* .monthlyOverview {
+        width: 405px; 
+    } */
+
+}

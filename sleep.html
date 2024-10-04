@@ -301,9 +301,6 @@
                     y: {
                         beginAtZero: true,
                         max: 50, // End value
-                        title: {
-                            display: true,
-                        },
                         ticks: {
                             stepSize: 10, // Increment by 10
                             callback: function (value) {
@@ -315,15 +312,10 @@
                         }
                     },
                     x: {
-                        title: {
-                            display: true,
-                        },
                         grid: {
                             display: false // Hide x-axis grid lines
                         }
-
                     }
-
                 },
                 plugins: {
                     legend: {
@@ -338,8 +330,8 @@
                     }
                 }
             }
-
         });
+   
         const sleepData = {
             sunday: [7, 17],
             monday: [6, 18],
