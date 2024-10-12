@@ -2159,6 +2159,13 @@ html {
     justify-content: center;
     align-items: center;
   }
+  /* .monthlyOverviewDaysWeek {
+    padding: 13px;
+    /* position: absolute; Keeps it fixed relative to parent */
+    /* top: 0;           Stays at the top when scrolling */
+    /* background-color: white; Prevents overlap */
+    /* z-index: 10;      Makes sure it stays above other content */
+} 
   .monthlyOverviewDaysWeek {
     padding: 13px;
   }
@@ -2167,6 +2174,7 @@ html {
     max-width: 410px;
     overflow-x: auto; /* Enable horizontal scrolling */
     margin-left: 0px;
+    /* position: relative; */
   }
 
   .chartContainer {
