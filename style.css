@@ -1864,7 +1864,8 @@ html {
   color: #3e4043;
 }
 
-.foodVariety,  .oneMonthFoodVariety {
+.foodVariety,
+.oneMonthFoodVariety {
   padding-bottom: 2rem;
   padding-top: 58px;
   display: flex;
@@ -2004,15 +2005,15 @@ html {
 
 /* meal */
 @media (max-width: 1024px) {
-  .monthlyOverviewMealContainer{
+  .monthlyOverviewMealContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.oneMonthFoodVariety{
-  display: flex;
-  justify-content: center;
-}
+  }
+  .oneMonthFoodVariety {
+    display: flex;
+    justify-content: center;
+  }
   .mealTrackerMainContainer {
     display: flex;
     flex-direction: column;
@@ -2029,7 +2030,7 @@ html {
     flex-direction: column;
     align-items: center;
   }
- 
+
   .monthlyOverviewDaysWeekMealContainer {
     gap: 12rem;
     justify-content: center;
@@ -2154,8 +2155,7 @@ html {
   }
 }
 @media (max-width: 768px) {
-  /* Add position: relative to the parent container */
-.monthlyOverViewMainContainer {
+  .monthlyOverViewMainContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2164,53 +2164,50 @@ html {
   width: 100%;
 }
 
-/* Static Element: Monthly Overview Text */
-.monthlyOverviewDaysWeek {
-  /* width: 100%; */
+  /* Static Element: Monthly Overview Text */
+   .monthlyOverviewDaysWeek {
+  width: 100%;
   padding: 8px;
   position: absolute; /* Keeps this element fixed within its parent container */
   top: 47px;
-  /* background-color: white; */
+
   z-index: 10;
+  }
+
+  /* .monthlyOverViewMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .monthlyOverviewDaysWeek {
+    padding: 13px;
+    position: absolute; 
+  top: 0;          
+   z-index: 10;   } */
+
+.monthlyOverviewDaysWeek {
+  /* padding: 13px; */
+}
+.monthlyOverview {
+  width: 100%;
+  max-width: 410px;
+  overflow-x: auto; 
+  margin-left: 0px;
+  padding-top: 70px;
+  /* position: relative; */
 }
 
-  .monthlyOverViewMainContainer {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-  /* .monthlyOverviewDaysWeek {
-    padding: 13px;
-    /* position: absolute; Keeps it fixed relative to parent */
-    /* top: 0;           Stays at the top when scrolling */
-    /* background-color: white; Prevents overlap */
-    /* z-index: 10;      Makes sure it stays above other content */
-} 
-  .monthlyOverviewDaysWeek {
-    padding: 13px;
-  
-  }
-  .monthlyOverview {
-    width: 100%;
-    max-width: 410px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    margin-left: 0px;
-    padding-top: 70px;
-    /* position: relative; */
-  }
+.chartContainer {
+  width: 600px; /* Set a larger width for the chart to enable scrolling */
+  overflow-x: auto; /* Allow horizontal scrolling within this container */
+}
+.monthlyOverviewDaysWeek {
+  gap: 10rem;
+}
 
-  .chartContainer {
-    width: 600px; /* Set a larger width for the chart to enable scrolling */
-    overflow-x: auto; /* Allow horizontal scrolling within this container */
-  }
-  .monthlyOverviewDaysWeek {
-    gap: 10rem;
-  }
-
-  /* .monthlyOverview {
+/* .monthlyOverview {
         width: 405px; 
     } */
-
 
 .InnerMainContainer {
   display: flex;
@@ -2438,7 +2435,18 @@ html {
   padding-left: 10px;
   padding-right: 10px;
 }
+.canvasWrapper {
+  height: 200px; /* Desired height for the canvas */
+  overflow: hidden; /* Prevent overflow */
+}
 
+#weightTrackerBarChart {
+  width: 100%; /* Make the canvas responsive */
+  height: 100%; /* Fill the wrapper */
+}
+
+
+}
 /* weight */
 @media (min-width: 424px) and (max-width: 600px) {
   .weightTrackerBackgroundContainer {
