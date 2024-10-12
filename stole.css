@@ -37,3 +37,61 @@
     } */
 
 }
+
+const ctxWeight = document.getElementById('weightTrackerBarChart').getContext('2d');
+const weightTrackerBarChart = new Chart(ctxWeight, {
+    type: 'bar',
+    data: {
+        labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
+        datasets: [{
+            label: 'Weight', // Set the label to "Weight"
+            data: [250, 200, 180, 220, 150, 100, 280, 210, 170, 190, 140, 200, 180, 100, 120, 170, 250, 160, 140, 180, 150, 210, 190, 200, 120, 170, 150, 100, 230, 200, 250], // Adjusted weight data in grams
+            backgroundColor: '#7CBA22',
+            borderColor: '#7CBA22',
+            barThickness: 8.8,
+            borderRadius: {
+                topLeft: 8,
+                topRight: 8,
+                bottomLeft: 0,
+                bottomRight: 0
+            }
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 250, // Maximum value for the y-axis
+                ticks: {
+                    stepSize: 50, // Increment by 50
+                    callback: function (value) {
+                        return value + 'g'; // Display "g" next to the tick values
+                    }
+                },
+                grid: {
+                    display: false, // Hiding grid lines
+                    color: '#E0E0E0'
+                }
+            },
+            x: {
+                grid: {
+                    display: false // Hiding x-axis grid lines
+                }
+            }
+        },
+        plugins: {
+
+            legend: {
+                display: false // Hiding the legend
+            },
+            tooltip: {
+                callbacks: {
+                    label: function (context) {
+                        return context.dataset.label + ': ' + context.raw + 'g'; // Display "g" in the tooltip
+                    }
+                }
+            }
+        }
+    }
+});
+.
