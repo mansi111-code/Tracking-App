@@ -283,6 +283,10 @@ a {
   font-family: "Poppins", sans-serif;
   padding-top: 14px;
 }
+#weightTrackerBarChart {
+  width: 100px;
+  height: 250px !important;
+}
 
 /* /Sleep Page Style/ */
 
@@ -2166,7 +2170,7 @@ html {
 
   /* Static Element: Monthly Overview Text */
    .monthlyOverviewDaysWeek {
-  width: 100%;
+  /* width: 100%; */
   padding: 8px;
   position: absolute; /* Keeps this element fixed within its parent container */
   top: 47px;
@@ -2196,7 +2200,6 @@ html {
   padding-top: 70px;
   /* position: relative; */
 }
-
 .chartContainer {
   width: 600px; /* Set a larger width for the chart to enable scrolling */
   overflow-x: auto; /* Allow horizontal scrolling within this container */
@@ -2225,7 +2228,19 @@ html {
   display: flex;
   justify-content: center;
 }
+/* WEIGHT */
+.weightTrackerBackgroundContainer{
+  width: 410px;
+    height: 245px;
 
+}
+.weightTracker img {
+  width: 390px;
+  height: 187px;
+}
+.weightTrackerBackgroundContainer p {
+  margin-right: 256px;
+}
 /* meal */
 .informationForHealth,
 .informationForFood {
@@ -2509,6 +2524,9 @@ html {
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
+  .monthlyOverviewDaysWeek{
+    gap: 5rem;
+  }
   .monthlyOverview {
     width: 310px;
     /* height: 203px; */
@@ -2742,6 +2760,9 @@ html {
   }
   .underlineToAll {
     margin-left: 0px;
+  }
+  .monthlyOverviewDaysWeek{
+    /* gap: 5rem; */
   }
 }
 @media (max-width: 390px) {
